@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   developmentModeText: {
-    marginBottom: 20,
+    marginBottom: 25,
     color: 'rgba(0,0,0,0.4)',
     fontSize: 14,
     lineHeight: 19,

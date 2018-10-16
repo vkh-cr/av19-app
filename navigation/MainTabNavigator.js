@@ -4,15 +4,18 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import ActivityScreen from '../screens/ActivityScreen';
+import CalendarScreen from '../screens/CalendarScreen';
+import SpeakersScreen from '../screens/SpeakersScreen';
+
+import Color from '../constants/Colors'
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+  tabBarLabel: 'Domů',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -25,36 +28,61 @@ HomeStack.navigationOptions = {
   ),
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+const ActivityStack = createStackNavigator({
+  Links: ActivityScreen,
 });
 
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+ActivityStack.navigationOptions = {
+  tabBarLabel: 'Aktivity',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link'}
+      name={Platform.OS === 'ios' ? `ios-analytics${focused ? '' : '-outline'}` : 'md-analytics'}
     />
   ),
 };
 
-const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen,
+const CalendarStack = createStackNavigator({
+  Settings: CalendarScreen,
 });
 
-SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+CalendarStack.navigationOptions = {
+  tabBarLabel: 'Kalendář',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options'}
+      name={Platform.OS === 'ios' ? `ios-calendar${focused ? '' : '-outline'}` : 'md-calendar'}
+    />
+  ),
+};
+
+const SpeakersStack = createStackNavigator({
+  Settings: SpeakersScreen,
+});
+
+SpeakersStack.navigationOptions = {
+  tabBarLabel: 'Přednášející',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={Platform.OS === 'ios' ? `ios-microphone${focused ? '' : '-outline'}` : 'md-microphone'}
     />
   ),
 };
 
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
-  SettingsStack,
-});
+  ActivityStack,
+  SpeakersStack,
+  CalendarStack,
+}, {
+    tabBarOptions: {
+      activeTintColor: Color.navActive,
+      labelStyle: {
+        fontSize: 12,
+      },
+      style: {
+        backgroundColor: Color.navBackground,
+      },
+    }
+  });
