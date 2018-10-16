@@ -8,7 +8,7 @@ import ActivityScreen from '../screens/ActivityScreen';
 import CalendarScreen from '../screens/CalendarScreen';
 import SpeakersScreen from '../screens/SpeakersScreen';
 
-import Color from '../constants/Colors'
+import Color from '../constants/Colors';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -76,13 +76,13 @@ export default createBottomTabNavigator({
   SpeakersStack,
   CalendarStack,
 }, {
-    tabBarOptions: {
-      activeTintColor: Color.navActive,
-      labelStyle: {
-        fontSize: 12,
-      },
-      style: {
-        backgroundColor: Color.navBackground,
-      },
-    }
-  });
+  tabBarOptions: {
+    activeTintColor: Color.navActive,
+    labelStyle: {
+      fontSize: 12,
+    },
+    style: {
+      backgroundColor: Color.navBackground,
+    },
+  },
+});
