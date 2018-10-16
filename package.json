@@ -9,8 +9,7 @@
     "eject": "expo eject",
     "test": "node ./node_modules/jest/bin/jest.js --watchAll",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:fix": "eslint --fix ."
   },
   "jest": {
     "preset": "jest-expo"
