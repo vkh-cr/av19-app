@@ -6,6 +6,7 @@ import { Container, Content, Tab, Tabs } from 'native-base';
 import { DaySchedule } from '../components/DaySchedule';
 import style from '../constants/Styles'
 import activities from '../data/activities'
+import schelude from '../data/schelude'
 
 export default class CalendarScreen extends React.Component {
 
@@ -20,13 +21,13 @@ export default class CalendarScreen extends React.Component {
         <Content>
           <Tabs>
             <Tab heading="Pátek" {...style.tab} >
-              <DaySchedule activities={_.filter(activities, ['day', 1])} />
+              <DaySchedule schelude={schelude.friday} />
             </Tab>
             <Tab heading="Sobota" {...style.tab} >
-              <DaySchedule activities={_.filter(activities, ['day', 2])} />
+              <DaySchedule schelude={schelude.saturday} />
             </Tab>
             <Tab heading="Neděle" {...style.tab} >
-              <DaySchedule activities={_.filter(activities, ['day', 3])} />
+              <DaySchedule schelude={schelude.friday} />
             </Tab>
           </Tabs>
         </Content>

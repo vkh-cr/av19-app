@@ -11,9 +11,11 @@ export default {
     borderColor: Color.mainColor
   },
   badge: {
-    backgroundColor: Color.mainColor,
-    marginRight: 3,
-    marginTop: 3
+    backgroundColor: [Color.mainColor, 'red', 'blue'],
+    style: {
+      marginRight: 3,
+      marginTop: 3
+    }
   },
   tab: {
     tabStyle: {
@@ -42,5 +44,13 @@ export default {
       backgroundColor: Color.navBackground,
     },
     headerTintColor: Color.mainColor,
+  },
+  badgeView: {
+    style: {
+      flex: 1,
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'flex-start'
+    }
   }
 }
