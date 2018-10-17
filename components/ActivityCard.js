@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
+import { Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base';
 export default class ActivityCard extends Component {
   render() {
     return (

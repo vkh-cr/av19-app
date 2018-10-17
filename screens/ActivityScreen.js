@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Header, Content, Tab, Tabs, Title, Body } from 'native-base';
+import { Container, Content, Tab, Tabs } from 'native-base';
 
 import FreeTimeTab from '../components/activityTabs/freeTime'
 import LecturesTab from '../components/activityTabs/lectures'
