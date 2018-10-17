@@ -76,13 +76,13 @@ export default createBottomTabNavigator({
   SpeakersStack,
   CalendarStack,
 }, {
-  tabBarOptions: {
-    activeTintColor: Color.navActive,
-    labelStyle: {
-      fontSize: 12,
+    tabBarOptions: {
+      activeTintColor: Color.navActive,
+      labelStyle: {
+        fontSize: 12,
+      },
+      style: {
+        backgroundColor: Color.navBackground,
+      },
     },
-    style: {
-      backgroundColor: Color.navBackground,
-    },
-  },
-});
+  });

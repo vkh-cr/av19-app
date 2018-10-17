@@ -1,9 +1,14 @@
 import React from 'react';
 import { ExpoConfigView } from '@expo/samples';
+import Color from '../constants/Colors';
 
 export default class CalendarScreen extends React.Component {
   static navigationOptions = {
     title: 'app.json',
+    headerStyle: {
+      backgroundColor: Color.navBackground,
+    },
+    headerTintColor: Color.mainColor,
   };
 
   render() {

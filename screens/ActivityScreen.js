@@ -1,30 +1,44 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { Button, Text } from 'native-base';
+
+import { Container, Header, Content, Tab, Tabs, Title, Body } from 'native-base';
+
+import FreeTimeTab from '../components/activityTabs/freeTime'
+import LecturesTab from '../components/activityTabs/lectures'
+import PrayerTab from '../components/activityTabs/prayer'
 import Color from '../constants/Colors'
 
 export default class ActivityScreen extends React.Component {
   static navigationOptions = {
-    title: 'Links',
+    headerStyle: {
+      backgroundColor: Color.navBackground,
+      elevation: 0,
+      shadowOpacity: 0
+    },
+    headerTintColor: Color.mainColor,
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+    title: 'Aktivity',
   };
 
   render() {
     return (
-      <ScrollView style={styles.container}>
-        {/* Go ahead and delete ExpoLinksView and replace it with your
-           * content, we just wanted to provide you with some helpful links */}
-        <Button>
-          <Text>Olala</Text>
-        </Button>
-      </ScrollView>
+      <Container>
+        <Content>
+          <Tabs>
+            <Tab heading="Volný čas" tabStyle={{ backgroundColor: Color.navBackground }} textStyle={{ color: '#fff' }} activeTabStyle={{ backgroundColor: Color.navBackground }} >
+              <FreeTimeTab />
+            </Tab>
+            <Tab heading="Přednášky" tabStyle={{ backgroundColor: Color.navBackground }} textStyle={{ color: '#fff' }} activeTabStyle={{ backgroundColor: Color.navBackground }}>
+              <LecturesTab />
+            </Tab>
+            <Tab heading="Duchovní" tabStyle={{ backgroundColor: Color.navBackground }} textStyle={{ color: '#fff' }} activeTabStyle={{ backgroundColor: Color.navBackground }}>
+              <PrayerTab />
+            </Tab>
+          </Tabs>
+        </Content>
+      </Container >
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: 'white',
-  },
-});
