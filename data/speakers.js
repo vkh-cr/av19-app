@@ -3,30 +3,30 @@
 export default [
   {
     id: 1,
-    name: 'Vojta',
+    name: 'Finn the Human',
     description: 'YOLOOOO',
     time: 'Pátek 18:00',
-    image: require('../assets/images/robot-dev.png')
+    image: require('../assets/images/avatars/man1.png')
   },
   {
     id: 2,
-    name: 'Ruslan',
+    name: 'Princess',
     description: 'Jogurt',
     time: 'Pátek 19:00',
-    image: require('../assets/images/robot-prod.png')
+    image: require('../assets/images/avatars/woman4.png')
   },
   {
     id: 3,
-    name: 'Petr',
+    name: 'Jake a dog',
     description: 'Juhu',
     time: 'Pátek 20:00',
-    image: require('../assets/images/robot-prod.png')
+    image: require('../assets/images/avatars/man2.png')
   },
   {
     id: 4,
-    name: 'Hugo',
-    description: 'Description as hell',
+    name: 'Ice king',
+    description: 'Description as ice',
     time: 'Pátek 21:00',
-    image: require('../assets/images/robot-dev.png')
+    image: require('../assets/images/avatars/man3.png')
   }
 ];

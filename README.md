@@ -9,6 +9,7 @@ This app is prototype of mobile application for www.absolventskyvelehrad.cz, whi
 * Calendar
 * Activities
 * Contact
+* Map
 * Song-book
 
 
@@ -22,6 +23,7 @@ This app is prototype of mobile application for www.absolventskyvelehrad.cz, whi
 
 ### Links
 * [ReactNative][2] - framework 
+* [Expo][4] - dev, build processes
 * [NativeBase.io][1] - UI library with components
 
 ### Contribution
@@ -31,3 +33,4 @@ Every PR is welcomed! But best way would be contact @vojtech-cerveny how to proc
 [1]: https://nativebase.io/
 [2]: https://facebook.github.io/react-native/docs/getting-started
 [3]: https://play.google.com/store/apps/details?id=host.exp.exponent&hl=cs
+[4]: https://docs.expo.io/versions/v30.0.0/
