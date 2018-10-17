@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  List, ListItem, Left, Body, Right, Thumbnail, Text, Container, Badge,
+  List, ListItem, Body, Text, Container, Badge,
 } from 'native-base';
 import { View } from 'react-native';
-import Style from '../constants/Styles'
+import style from '../constants/Styles'
 
 
 
@@ -13,20 +13,20 @@ export class DaySchedule extends React.Component {
       <Container>
         <List dataArray={this.props.activities}
           renderRow={(activity) =>
-            <ListItem avatar style={Style.container}>
+            <ListItem avatar style={style.container}>
               <Body>
                 <Text>{activity.name}</Text>
                 <Text note>{activity.time}</Text>
                 <Text note>{activity.speaker.name}</Text>
 
                 <View style={{ flexDirection: "row" }}>
-                  <Badge style={Style.badge} >
+                  <Badge style={style.badge} >
                     <Text>One</Text>
                   </Badge>
-                  <Badge style={Style.badge} >
+                  <Badge style={style.badge} >
                     <Text>One</Text>
                   </Badge>
-                  <Badge style={Style.badge} >
+                  <Badge style={style.badge} >
                     <Text>One</Text>
                   </Badge>
                 </View>

@@ -14,5 +14,33 @@ export default {
     backgroundColor: Color.mainColor,
     marginRight: 3,
     marginTop: 3
+  },
+  tab: {
+    tabStyle: {
+      backgroundColor: Color.navBackground
+    },
+    textStyle: {
+      color: '#fff'
+    },
+    activeTabStyle: {
+      backgroundColor: Color.navBackground
+    }
+  },
+  header: {
+    headerStyle: {
+      backgroundColor: Color.navBackground,
+      elevation: 0,
+      shadowOpacity: 0
+    },
+    headerTintColor: Color.mainColor,
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  },
+  headerWShadow: {
+    headerStyle: {
+      backgroundColor: Color.navBackground,
+    },
+    headerTintColor: Color.mainColor,
   }
 }

@@ -1,30 +1,19 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Speakers } from '../components/Speakers'
-import Color from '../constants/Colors';
+import style from '../constants/Styles'
 
 export default class SpeakersScreen extends React.Component {
   static navigationOptions = {
     title: 'Přednášející',
-    headerStyle: {
-      backgroundColor: Color.navBackground,
-    },
-    headerTintColor: Color.mainColor,
+    ...style.headerWShadow
   };
 
   render() {
     return (
-      <ScrollView style={styles.container}>
+      <ScrollView>
         <Speakers />
       </ScrollView>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: 'white',
-  },
-});
