@@ -24,7 +24,7 @@ export default [
     speaker: speakerByName('Jake a dog'),
     time: 'Pátek 20:00',
     description: 'Something weird might just be something familiar viewed from a different angle.',
-    image: require('../assets/images/activities/activity1.png'),
+    image: require('../assets/images/activities/activity2.png'),
     day: 2,
     block: 0,
     type: 1
@@ -35,7 +35,7 @@ export default [
     speaker: speakerByName('Princess'),
     time: 'Pátek 19:00',
     description: 'People get built different. We don\'t need to figure it out, we just need to respect it.',
-    image: require('../assets/images/activities/activity1.png'),
+    image: require('../assets/images/activities/activity3.png'),
     day: 1,
     block: 0,
     type: 2

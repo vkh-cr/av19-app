@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Image } from 'react-native';
 import { Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base';
-export default class ActivityCard extends Component {
+export default class ActivityCard extends React.Component {
   render() {
     return (
       <Card>
         <CardItem>
           <Left>
-            <Thumbnail source={require('../assets/images/avatars/woman1.png')} />
+            <Thumbnail source={this.props.event.speaker.image} />
             <Body>
-              <Text>Check it out, Dipper!</Text>
-              <Text note>Mabel, pátek 18:00, učebna A</Text>
+              <Text>{this.props.event.name}</Text>
+              <Text note>{this.props.event.speaker.name}, {this.props.event.time}, učebna A</Text>
             </Body>
           </Left>
         </CardItem>
         <CardItem cardBody>
           <Body>
             <Image
-              source={require('../assets/images/activities/activity1.png')}
+              source={this.props.event.image}
               style={{ height: 200, width: '100%', flex: 1 }}
               borderTopLeftRadius={15}
               borderTopRightRadius={15}
