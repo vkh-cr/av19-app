@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
-import { Speaker } from '../components/Speaker'
+import { Speakers } from '../components/Speakers'
 
 export default class SpeakersScreen extends React.Component {
   static navigationOptions = {
@@ -10,14 +10,7 @@ export default class SpeakersScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Speaker name="Vojta" />
-        <Speaker name="Vojta" />
-        <Speaker name="Vojta" />
-        <Speaker name="Vojta" />
-        <Speaker name="Vojta" />
-        <Speaker name="Vojta" />
-        <Speaker name="Vojta" />
-        <Speaker name="Vojta" />
+        <Speakers />
       </ScrollView>
     );
   }
