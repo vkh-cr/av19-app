@@ -18,4 +18,6 @@ export default {
   blue: '#2295D7',
   blueAlt: '#53A7DA',
   black: '#000',
+  orange: '#E94D2F',
+  navy: '#58598d',
 };

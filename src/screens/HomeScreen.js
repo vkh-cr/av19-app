@@ -1,46 +1,50 @@
 import React from "react";
 import { StyleSheet, Text, View, Button, Dimensions } from "react-native";
+import { Container, Header, Content, Card, CardItem, Body, H3 } from "native-base";
 import { DrawerMenuButton } from "../components/DrawerMenuButton";
-import { window } from "../constants/Layout";
-import { HeaderText } from "../components/HeaderText";
 let screen = Dimensions.get("window");
 
 class HomeScreen extends React.Component {
   static navigationOptions = () => {
     return {
-      title: 'Home Screen',
+      title: "Home Screen",
       headerLeft: <DrawerMenuButton />,
-      headerTintColor: 'black'
-    }
-  }
+      headerTintColor: "black"
+    };
+  };
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.text}>Home</Text>
-        <Button
-          title="Go Link Screen"
-          onPress={() => this.props.navigation.navigate("Link")}
-        />
-        <Button
-          title="Go Link Screen"
-          onPress={() => this.props.navigation.navigate("Speakers")}
-        />
-      </View>
+      <Container>
+        <Content style={{ padding: 10}}>
+          <Card>
+            <CardItem>
+              <Body>
+                <H3>Novinky budou zde</H3>
+              </Body>
+            </CardItem>
+          </Card>
+
+          <Card>
+            <CardItem>
+              <Body>
+                <H3>Aktuální aktivita</H3>
+              </Body>
+            </CardItem>
+          </Card>
+
+          <Card>
+            <CardItem>
+              <Body>
+                <H3>Příští aktivita</H3>
+                <Text>Yolo yolo</Text>
+              </Body>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  text: {
-    fontSize: 30
-  }
-});
 
 export { HomeScreen };

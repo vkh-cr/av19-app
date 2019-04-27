@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { Text, Content, Card, CardItem, Body } from 'native-base';
 import ActivityCard from './ActivityCard';
 
+
 export default class ActivityTab extends React.Component {
   render() {
     return (

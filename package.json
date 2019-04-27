@@ -5,7 +5,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "ttest": "react-native link react-native-blur"
+    "ttest": "react-native link react-native-blur",
+    "test": "node_modules/.bin/jest",
+    "test:debug": "node --inspect-brk node_modules/jest/bin/jest.js --runInBand"
   },
   "dependencies": {
     "@expo/vector-icons": "^9.0.0",
@@ -18,7 +20,12 @@
     "react-navigation": "^3.0.9"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^5.0.0",
+    "jest-expo": "^32.0.0",
+    "react-test-renderer": "^16.8.4"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "private": true
 }

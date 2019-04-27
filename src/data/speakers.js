@@ -2,11 +2,17 @@
 
 export default [
   {
+    id: 0,
+    name: "tým AV19",
+    description:
+      "Nejlepší tým :)",
+    image: require("../assets/images/avatars/man1.png")
+  },
+  {
     id: 1,
     name: "Mgr. Jan Špilar",
     description:
       "Kadeřník, podnikatel a trvalý jáhen, vede přednášky a adorace nejen pro manželské páry o duchovním posunu v partnerství. Od roku 2007 je vyšetřujícím soudcem Diecézního soudu v Brně. V únoru 2018 se rozhodl kandidovat ve volbách do Senátu PČR na podzim roku 2018.",
-    time: "Pátek 18:00",
     image: require("../assets/images/avatars/man1.png")
   },
   {
@@ -14,7 +20,6 @@ export default [
     name: "Pavel Bělobrádek",
     description:
       "MVDr. Pavel Bělobrádek, Ph.D., MPA je mladý český křesťansko-demokratický politik, který přivedl lidovce zpět do poslanecké sněmovny, zároveň někdejší místopředseda vlády pro vědu a výzkum, dříve doktor veterinární hygieny a absolvent CEVRO Institutu a postgraduálního MPA programu – Bezpečnostní a krizový management. Otec tří malých dětí, bojovník s roztroušenou sklerózou i básník šansonu i kapely The Tap Tap.",
-    time: "Pátek 19:00",
     image: require("../assets/images/avatars/woman4.png")
   },
   {
@@ -22,15 +27,13 @@ export default [
     name: "Jiří Padevět",
     description:
       "Známý spisovatel, ředitel nakladatelství Academia, držitel Magnesie litery za Průvodce protektorátní Prahou, autor televizního pořadu Krvavá léta (o místech spojených s nacistickou a komunistickou tyranií). Ve svých populárních textech se často zabývá aktuálním děním i totalitními režimy. ",
-    time: "Pátek 20:00",
     image: require("../assets/images/avatars/man2.png")
   },
   {
     id: 4,
     name: "František Lízna",
     description:
-      "Tento politický vězeň (zavřený za komunistické totality hned pětkrát), pétépák, moravský kněz, jezuita a poutník (nejen) na Krym či do Santiaga je držitelem Ceny Paměti národa i Řádu Tomáše Garrigua Masaryka za vynikající zásluhy o demokracii a lidská práva. Tento někdejší Havlův spoluvězeň se věnuje se mj. pastoraci Romů, vězňů a bezdomovců a napsal několik knih. ",
-    time: "Pátek 21:00",
+      "František Lízna SJ, aktivní moravský kněz a jezuita, původem z komunisty perzekvované rodiny, sám pětkrát vězněný (mj. společně s Václavem Havlem), který poznal život za mřížemi později též při své duchovní službě na Mírově (včetně odsouzeného Kajínka). Věnoval se též pastoraci Romů i bezdomovců. V pěších poutích (od Santiaga po Krym) se snaží propojovat křesťanský Východ a Západ. 17. listopadu 2017 byl mezi čtyřmi česko-slovenskými laureáty Ceny Paměti národa; o postřezích ze svého dobrodružného kněžského života psal knihy. Do roku 1989 fungoval bez státního souhlasu, byl signatářem Charty 77, nositelem Ceny Františka Kriegla „za obětavou práci s odsouzenými“ a řádu TGM „za vynikající zásluhy o demokracii a lidská práva“. Hlásí se k romské národnosti. ",
     image: require("../assets/images/avatars/man3.png")
   },
   {
@@ -38,15 +41,6 @@ export default [
     name: "Jan Regner",
     description:
       "P. ThLic. Mgr. Jan Regner SJ Th.D. je mladý a velice aktivní jezuita, který působil v Akademické farnosti Praha. Po duchovním vedení Vysokoškolského katolického hnutí Praha přešel do olomoucké sekce této organizace. Rodák z Červeného Kostelce, původním povoláním umělecký řezbář a sochař, od roku 1995 člen Tovaryšstva Ježíšova studující postupně v Krakově, Římě a v Německu, dlouholetý redaktor Vatikánského rozhlasu i bulletinu Jezuité, je znám také jako oblíbený exercitátor.  ",
-    time: "Pátek 21:00",
-    image: require("../assets/images/avatars/man3.png")
-  },
-  {
-    id: 6,
-    name: "Kateřina Lachmanová",
-    description:
-      "PhLic. Kateřina Lachmanová, ThD. je specialistkou na spirituální teologii, teologickou antropologii a psychologii, úspěšnou přednášející, autorkou mnoha publikací, šéfredaktorkou Karmelitánského nakladatelství. Věnuje se též pastoračně psychologickému poradenství, rekolekcím, výuce na katolických teologických fakultách, tisíce lidí ji znají z televize i akcí jako Katolická charistmatická konference či JUMP. S Bc. Dominikem Vítem, mladým studentem ČVÚT a dobrovolníkem Mary´s Meals, představí možnosti zapojení do obdobných bohulibých děl.  ",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
   {
@@ -54,31 +48,20 @@ export default [
     name: "Pavel Šimon",
     description:
       "Mgr. Bc. Pavel Šimon je vedoucím služby pro rodiny v obtížné životní situaci a vedoucí Centra náhradní rodinné péče. Profesí sociální pracovník, pedagog, krizový intervent a rodinný terapeut ve výcviku. Někdejší “týmák” na Vesmíru a organizátor mládeže, otec 4 dětí, kterému rodinná politika není lhostejná. Nesnáší brokolici a špatné víno.",
-    time: "Pátek 21:00",
-    image: require("../assets/images/avatars/man3.png")
-  },
-  {
-    id: 8,
-    name: "Leo Gallas",
-    description:
-      "P. Mgr. Ing. Leo Gallas, Ph.D., O.Cr. je novokněz, člen jediného na našem území založeného řádu – křižovníků s červenou hvězdou. Ve své přednášce se chce (prakticky a srozumitelně) zabývat vztahem k prožívání křesťanství, hledáním povolání a obtížemi při jeho hledání, zasvěceným životem, jeho radostmi a strastmi, prožíváním víry v moderní době, vírou a inteligencí atp. ",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
   {
     id: 9,
-    name: "Petr Beneš",
+    name: "Petr Beneš Praha",
     description:
       "Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
   {
     id: 10,
-    name: "Manželé Peter a Gabriela Štupákovi ",
+    name: "Manželé Peter a Gabriela Štupákovi",
     description:
       "Peter je leader katolického společenství Marana Tha v Prešově. Společně s manželkou Gabrielou vychovávají čtyři děti. Působí v pořadu Na cestě v rodině TV LUX (Slovensko).",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
   {
@@ -86,43 +69,137 @@ export default [
     name: "PhDr. Ing. Marie Oujezdská",
     description:
       "Je ředitelkou Národního centra pro rodinu, nestátní neziskové organizace, založené Českou biskupskou konferencí, činnost centra respektuje pohled katolické církve. V pastorační práci se angažuje jako koordinační a informační centrum pro diecézní a regionální centra pro rodinu.",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
   {
     id: 12,
-    name: "Jan Janda – komunita Sant’Egidio",
+    name: "Jan Janda a M. Hanych – komunita Sant’Egidio",
     description:
       "Komunita Sant’Egidio je laické hnutí, které vzniklo v Římě. Jeho členové se zasazují o předávání evangelia a působí v dobročinné službě. Je to „veřejné sdružení laiků v církvi“.",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
   {
     id: 13,
     name: "Manželé Míla a Pavel Bajerovi",
     description: "Míla a Pavel Bajerovi jsou organizátoři a lektoři vztahových a jiných kursů Manželské večery, Manželství na dobré cestě, Příprava na manželství, Hranice (nejen) v partnerských vztazích či Peníze a já v Brně u jezuitů. Míla vystudovala teologické nauky na CMTF. Momentálně koordinuje vzdělávací aktivity v Institutu Bernarda Bolzana. Pavel získal doktorát v sociální práci na MU v Brně. V minulosti učil na FSS MU a vedl časopis Sociální práce/Sociálna práca. V současnosti pracuje jako osobní vztahový kouč v seznamovací agentuře Date2k. Míla a Pavel jsou svoji už 11 let a ve volném čase chodí po kopcích a cestují.",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
   {
     id: 14,
     name: "Helena Janíková – Adopce nablízko",
-    description: "Salesiánská asociace Dona Boska, z. s. je nestátní nezisková organizace zřízená salesiány, která vznikla v roce 2005. Jejím hlavním cílem je pomáhat znevýhodněným dětem a mládeži ve světě prostřednictvím programu Adopce nablízko.",
-    time: "Pátek 21:00",
+    description: "Adopce nablízko je nezisková organizace, která školí a vysílá misijní dobrovolníky do různých zemí světa. Dobrovolníci pracují v salesiánských střediscích s dětmi a mládeží. Na přednášce se vám někteří z nich představí. Povypráví o tom, jak svou službu prožili, ukáží fotky a zodpoví vaše dotazy. Jmenovitě Marie Jenišová – dobrovolnice v Ekvádoru, Radka Stránská – dobrovolnice v Zambii, Monika Petruchová – dobrovolnice v Bulharsku, Helena Janíková – dobrovolnice v Bulharsku a koordinátorka kurzu Cagliero  – Adopce nablízko.",
     image: require("../assets/images/avatars/man3.png")
   },
   {
     id: 15,
     name: "Ondřej Kobza",
     description: "Umělec a „pražský kavárník“, který zasvětil svůj život oživování prostředí kolem sebe. Na kontě má projekty jako Piána na ulici, instalaci poesiomatů (neboli „juboxů na básně“), interaktivní procházky Básníci a hospody, zpřístupnění malostranských dvorků či bohatý kulturní, duchovní i sportovní program na střeše Lucerny.",
-    time: "Pátek 21:00",
     image: require("../assets/images/avatars/man3.png")
   },
-  // {
-  //   id: 16,
-  //   name: "",
-  //   description: "",
-  //   time: "Pátek 21:00",
-  //   image: require("../assets/images/avatars/man3.png")
-  // }
+  {
+    id: 16,
+    name: "Honza Adamčík",
+    description: "Honza Adamčík je od mládí vášnivý sportovec s citem pro pohyb. Postupně jeho kroky vedly k bojovým sportům, až zůstal u Krav Maga. Honza absolvoval instruktorský kurz pod vedením zahraničního experta Mateusze Soga. Má certifikaci pro cvičení dospělých – Instruktor (technický stupeň G3). ",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 17,
+    name: "Jakub Konček",
+    description: "",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 18,
+    name: "Petr Beneš Brno",
+    description:
+      "Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 19,
+    name: "Ch. D. Balvo",
+    description:
+      "Jeho Excelence Mons. Charles Daniel Balvo, Američan, který díky předchozí zkušenosti z naší země umí ještě česky. Je absolvent kanonického práva a během několika předchozích desetiletí vyslanec Svatého stolce, který svůj život strávil v nejrůznějších končinách světa. Byl jmenován též stálým pozorovatelem Programu OSN pro životní prostředí (UNEP) a pro lidská sídla (UN-Habitat). Hovoří anglicky, italsky, španělsky, francouzsky a dokonce i česky. Debata však bude vedena v anglickém jazyce.",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 20,
+    name: "Alžběta Filipová",
+    description:
+      "Alžběta Filipová vystudovala činoherní herectví na JAMU v Brně. Od té doby hraje v Divadle Polárka, v Divadle U stolu, v Divadelném centru Žilina, v Divadle Scéna. Příležitostně se pouští do lektorování v oblasti dramatického oboru.",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 21,
+    name: "David Ambrož",
+    description:
+      "ThLic. David Ambrož je farář v obci Tvarožná (brněnská diecéze), 45 let, knězem je 14 let. Témata, která jsou mu víc blízká a která sem tam i přednáší, se týkají obecné křesťanské morálky (sbližoval se s ní také 2 roky v Římě)…",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 22,
+    name: "Lukáš Rieger",
+    description:
+      "Lukáš Rieger absolvoval studium činoherního herectví na Divadelní fakultě JAMU – v magisterském i doktorském stupni (disertace má název O přesahu v herectví : Teologická hermeneutika divadelní antropologie podle Exerciií Ignáce z Loyoly). Pohostinsky účinkoval v různých brněnských divadlech – od roku 2006 je hercem nezávislého divadla BURANTEATR. Mezi jeho nejvýznamnější divadelní zkušenosti patří stáž na tradiční ruské herecké škole – Institutu Borise Ščukina v Moskvě. Od roku 2003 působí jako pedagog herectví na JAMU – od roku 2014 je vedoucím vlastního ateliéru. Ženatý. Katolík. Výrobce ovocných vín. ",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 23,
+    name: "Markéta Grigarová",
+    description:
+      "Jmenuji se Marketa Grigarová a posledních 8 let jsem žila někde mezi Brnem, Aljaškou, Peru a Irskem. Krása a energie Latinské Ameriky mi očarovala natolik, že jsem se po životě v Peru rozhodla nevrátit \"domů\", ale ještě na pár měsíců procestovat magickou krajinu Patagonie. ",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 24,
+    name: "Eva Čepelková",
+    description:
+      "Eva Čepelková je manželka a matka, lektorka angličtiny a překladatelka. Aby se na mateřské nezbláznila, prochází výcvikem Mediace pro život. Má ráda nenásilnou komunikaci a chtěla by se podělit o to, co pro ni znamená.",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 25,
+    name: "Leona Ondrušková",
+    description:
+      "Leona Ondrušková  je vizážistka / maskérka, fotografka a nadšená cestovatelka. Má za sebou make-up spolupráci s Českou Miss, předními zlínskými firmami a vlastní vizážistické studio. Zaměřuje se na tvorbu celkové svatební vizáže, reklamní makeup, ale i osobní klientelu, kterou učí nalézt pomocí kurzů líčení většímu sebevědomí. Podílí se také na kreativním tvoření masek pro fashion designéry a filmová natáčení. Vyznává individuální přístup ke každému a miluje přirozený makeup.",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 26,
+    name: "Jiří Kohoutek",
+    description:
+      "Mgr. & Mgr. Jiří J. Kohoutek Absolvent oboru Teologické nauky na CMTF v Olomouci. Nyní se zabývá spiritualitou všedního života, akcí a kontemplací. Dlouholetý pedagog,  v současnosti zaměstnaný mimo obor, v IT firmě. zároveň je podnikatelem, řemeslníkem, vytvářející předměty na přání z kůže a dřeva. Milovník krásného a dobrého.",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 27,
+    name: "Jan Balák",
+    description: "",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 28,
+    name: "E. Šimečková",
+    description: "",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 29,
+    name: "M. Štěpánová & J. Repčík",
+    description: "Markéta Štěpánová a Juraj Repčík, absolventi swingové školy Swing Wings, našli zalíbení ve swingovém tanci z prvorepublikové doby, který se vyznačuje svou uvolněností a improvizovaností. Lindy Hop je tanec, který se nejčastěji tančil na swingovou hudbu. Vznikl spontánně na tančírnách v Harlemu v New Yorku mezi 20-30. lety 20. století. Jde o společenský tanec, často veselý a energický, u kterého se střídají partneři. Je ideální na to se pořádně vyřádit a odreagovat! Na workshopu vás naučíme úplným základům swingového tance Lindy Hop, což vám bude stačit k tomu, abyste protančili celou noc. \n\nDresscode: pohodlné oblečení, obuv – nízké podpatky",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 30,
+    name: "Tomáš Novák",
+    description: "Ing. Tomáš Novák pracuje ve své soukromé praxi jako individuální či párový psychoterapeut, a v obchodních firmách externě jako kouč pro oblast rozvoje lidí, vedení jednání, řízení týmu či projektů a rozvoj obchodu. Než objevil kouzlo psychoterapie a absolvoval pětiletý výcvik v existenciální analýze/logoterapii, pracoval v nadnárodních IT, telekomunikačních a bankovních společnostech jako projektový manažer nebo obchodní kouč.",
+    image: require("../assets/images/avatars/man3.png")
+  },
+  {
+    id: 31,
+    name: "Josef Pejchal",
+    description: "Josef Pejchal se zhruba před deseti lety stal miláčkem tisíců českých žen (v slavných počátcích Ordinace v růžové zahradě), jinak úspěšný divadelní herec (Východočeské divadlo Pardubice) a velice produktivní dabér – český Spiderman, Dr. Strange, Sherlock Holmes, Lancelot ze Shreka i Nikolaj z Vojny a míru. Odmala dítě s uměleckými sklony, později absolvent pražské konzervatoře, před pardubickým angažmá herec v olomouckém Moravském divadle i Černém divadle Jiřího Srnce, s nímž procestoval svět. Kluk z velké katolické rodiny a aktivní amatérský sportovec. ",
+    image: require("../assets/images/avatars/man3.png")
+  }
+
 ];

@@ -11,7 +11,7 @@ export default {
   badgeView: {
     style: {
       flex: 1,
-      flexDirection: "row",
+      flexDirection: "column",
       flexWrap: "wrap",
       justifyContent: "flex-start"
     }
@@ -21,8 +21,8 @@ export default {
       marginTop: 3,
       marginRight: 3
     },
-    backgroundColor: [Color.yellow, Color.blue, Color.green],
-    color: [Color.black, Color.white, Color.white],
+    backgroundColor: [Color.darkergreen ,Color.yellow, Color.blue, Color.green],
+    color: [Color.white, ,Color.white, Color.white, Color.white],
     text: {
       style: {
         fontSize: 15,
@@ -69,4 +69,10 @@ export default {
       
     },
   },
+  time: {
+    style: {
+      color: Color.navy,
+      fontWeight: "bold"
+    }
+  }
 };

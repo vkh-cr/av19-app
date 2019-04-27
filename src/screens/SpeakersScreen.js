@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Card,
   List,
   ListItem,
   Left,
@@ -14,16 +15,13 @@ import { StyleSheet } from "react-native";
 import Color from "../constants/Colors";
 import speakers from "../data/speakers";
 import { DrawerMenuButton } from "../components/DrawerMenuButton";
-
-
-
+import _ from "lodash";
 
 export class SpeakersScreen extends React.Component {
   static navigationOptions = () => {
     return {
       title: "Přednášející",
-      headerLeft: <DrawerMenuButton />,
-      headerTintColor: "black"
+      headerLeft: <DrawerMenuButton />
     };
   };
 
@@ -31,7 +29,7 @@ export class SpeakersScreen extends React.Component {
     return (
       <Container>
         <List
-          dataArray={speakers}
+          dataArray={_.sortBy(_.filter(speakers, speaker => speaker.id > 0), function (speaker) { return speaker.name.split(' ').pop() })}
           renderRow={speaker => (
             <ListItem
               avatar
@@ -48,10 +46,18 @@ export class SpeakersScreen extends React.Component {
               <Body>
                 <Text>{speaker.name}</Text>
                 <Text note>{speaker.time}</Text>
-                <Text note>{speaker.description.substring(0,40) + "..."}</Text>
+                <Text note>{speaker.description.substring(0, 40) + "..."}</Text>
               </Body>
               <Right>
-                <Button transparent>
+                <Button
+                  transparent
+                  onPress={() =>
+                    this.props.navigation.navigate("Speaker", {
+                      speaker: speaker,
+                      title: speaker.name
+                    })
+                  }
+                >
                   <Text style={styles.textContent}>Profil</Text>
                 </Button>
               </Right>

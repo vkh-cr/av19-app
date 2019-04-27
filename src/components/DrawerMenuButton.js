@@ -3,7 +3,6 @@ import { Ionicons } from '@expo/vector-icons'
 import { withNavigation } from 'react-navigation'
 
 const ButtonComponent = ({ navigation }) => {
-	console.log('navigation', navigation)
 	return (
 		<Ionicons
 			name="md-menu"

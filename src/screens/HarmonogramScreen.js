@@ -26,22 +26,20 @@ export class HarmonogramScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Content>
-          <Tabs
-            tabBarUnderlineStyle={style.tab.tabBarUnderlineStyle}
-            ref={component => (this._tabs = component)}
-          >
-            <Tab heading="Pátek" {...style.tab}>
-              <CalendarDay schelude={schelude.friday} />
-            </Tab>
-            <Tab heading="Sobota" {...style.tab}>
-              <CalendarDay schelude={schelude.saturday} />
-            </Tab>
-            <Tab heading="Neděle" {...style.tab}>
-              <CalendarDay schelude={schelude.sunday} />
-            </Tab>
-          </Tabs>
-        </Content>
+        <Tabs
+          tabBarUnderlineStyle={style.tab.tabBarUnderlineStyle}
+          ref={component => (this._tabs = component)}
+        >
+          <Tab heading="Pátek" {...style.tab}>
+            <CalendarDay schelude={schelude.friday} />
+          </Tab>
+          <Tab heading="Sobota" {...style.tab}>
+            <CalendarDay schelude={schelude.saturday} />
+          </Tab>
+          <Tab heading="Neděle" {...style.tab}>
+            <CalendarDay schelude={schelude.sunday} />
+          </Tab>
+        </Tabs>
       </Container>
     );
   }

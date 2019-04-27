@@ -10,7 +10,7 @@ export default class ActivityCard extends React.Component {
             <Thumbnail source={this.props.event.speaker.image} />
             <Body>
               <Text>{this.props.event.name}</Text>
-              <Text note>{this.props.event.speaker.name}, {this.props.event.time}, učebna A</Text>
+              <Text note>{this.props.event.speaker.name}, {this.props.event.time}, {this.props.event.place}</Text>
             </Body>
           </Left>
         </CardItem>
@@ -19,8 +19,6 @@ export default class ActivityCard extends React.Component {
             <Image
               source={this.props.event.image}
               style={{ height: 200, width: '100%', flex: 1 }}
-              borderTopLeftRadius={15}
-              borderTopRightRadius={15}
             />
           </Body>
         </CardItem>

@@ -17,6 +17,9 @@ import style from "../constants/Styles";
 export class CalendarDay extends React.Component {
   showEvents = activity => {
     return _.map(activity.activities, event => {
+      if (event.name.length > 50){
+        event.name = event.name.substring(0, 50) + "..."
+      }
       return (
         <Badge
           style={{
@@ -51,7 +54,7 @@ export class CalendarDay extends React.Component {
               </Left>
               <Body>
                 <Text style={style.activity.header}>{activity.name}</Text>
-                <Text note>{activity.time}</Text>
+                <Text style={style.time.style} note>{activity.time}</Text>
                 <Text note>{activity.location}</Text>
                 <View {...style.badgeView}>
                   {activity.activities && this.showEvents(activity)}
