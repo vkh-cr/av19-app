@@ -19,14 +19,17 @@ export default {
   badge: {
     style: {
       marginTop: 3,
-      marginRight: 3
+      marginRight: 3,
+      alignSelf: 'flex-start',
+      maxWidth: '90%'
     },
     backgroundColor: [Color.grassGreen, Color.goldenBay, Color.warmOrange, Color.grassGreen],
     color: [Color.white, Color.black, Color.white, Color.white],
     text: {
       style: {
         fontSize: 15,
-        lineHeight: 30
+        lineHeight: 30,
+        flex: 1,
       }
     }
   },

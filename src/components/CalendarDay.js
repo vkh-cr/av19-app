@@ -14,22 +14,20 @@ import { View } from "react-native";
 
 import style from "../constants/Styles";
 import { AVText } from "./text/AVText";
-
+import window from "../constants/Layout";
 export class CalendarDay extends React.Component {
   showEvents = activity => {
     return _.map(activity.activities, event => {
-      if (event.name.length > 50){
-        event.name = event.name.substring(0, 50) + "..."
-      }
       return (
         <Badge
           style={{
             ...style.badge.style,
-            backgroundColor: style.badge.backgroundColor[event.type]
+            backgroundColor: style.badge.backgroundColor[event.type],
           }}
           key={event.id}
         >
           <Text
+            numberOfLines={1}
             style={{
               ...style.badge.text.style,
               color: style.badge.color[event.type]
@@ -50,7 +48,7 @@ export class CalendarDay extends React.Component {
           dataArray={this.props.schelude}
           renderRow={activity => (
             <ListItem avatar style={style.container}>
-              <Left>
+              <Left style={{maxWidth: '10%'}}>
                 <Icon name={activity.icon} />
               </Left>
               <Body>
