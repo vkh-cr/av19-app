@@ -10,28 +10,13 @@ export default {
   },
   badgeView: {
     style: {
-      flex: 1,
-      flexDirection: "column",
       flexWrap: "wrap",
-      justifyContent: "flex-start"
+      flexDirection: 'row',
     }
   },
   badge: {
-    style: {
-      marginTop: 3,
-      marginRight: 3,
-      alignSelf: 'flex-start',
-      maxWidth: '90%'
-    },
-    backgroundColor: [Color.grassGreen, Color.goldenBay, Color.warmOrange, Color.grassGreen],
-    color: [Color.white, Color.black, Color.white, Color.white],
-    text: {
-      style: {
-        fontSize: 15,
-        lineHeight: 30,
-        flex: 1,
-      }
-    }
+    backgroundColor: [Color.grassGreen, Color.goldenBay, Color.pictionBlue, Color.grassGreen],
+    color: [Color.black, Color.black, Color.black, Color.black],
   },
   tab: {
     tabStyle: {

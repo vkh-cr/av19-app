@@ -1,18 +1,17 @@
 import React from "react";
-import { StyleSheet, Text, View, Button, Dimensions } from "react-native";
+import { View } from "react-native";
 import {
   Container,
-  Header,
   Content,
   Card,
   CardItem,
   Body,
-  H1, H2, H3, Badge
 } from "native-base";
 import { DrawerMenuButton } from "../components/DrawerMenuButton";
 
 import style from "../constants/Styles"
 import { PageHeader, Anchor, AVText, AVHeader, AVHeader2 } from "../components/text/AVText";
+import { AVBadge } from "../components/AVBadge";
 class HomeScreen extends React.Component {
   static navigationOptions = () => {
     return {
@@ -32,53 +31,23 @@ class HomeScreen extends React.Component {
                 <AVHeader>Vysvětlivky k Harmonogramu</AVHeader>
                 <View style={{
                   paddingTop: 10,
-                  flexDirection: 'row'
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
                 }}>
-                  <Badge
-                    style={{
-                      ...style.badge.style,
-                      backgroundColor: style.badge.backgroundColor[1]
-                    }}
-                  >
-                    <Text
-                      style={{
-                        ...style.badge.text.style,
-                        color: style.badge.color[1]
-                      }}
-                    >
-                      Přednášky
-                  </Text>
-                  </Badge>
-                  <Badge
-                    style={{
-                      ...style.badge.style,
-                      backgroundColor: style.badge.backgroundColor[2]
-                    }}
-                  >
-                    <Text
-                      style={{
-                        ...style.badge.text.style,
-                        color: style.badge.color[2]
-                      }}
-                    >
-                      Volnočasové aktivity
-                  </Text>
-                  </Badge>
-                  <Badge
-                    style={{
-                      ...style.badge.style,
-                      backgroundColor: style.badge.backgroundColor[3]
-                    }}
-                  >
-                    <Text
-                      style={{
-                        ...style.badge.text.style,
-                        color: style.badge.color[3]
-                      }}
-                    >
-                      Duchovní aktivity
-                  </Text>
-                  </Badge>
+
+                  <AVBadge
+                    text="Přednášky"
+                    eventType={1}
+                  />
+
+                  <AVBadge
+                    text="Volnočasové aktivity"
+                    eventType={2}
+                  />
+                  <AVBadge
+                    text="Duchovní aktivity"
+                    eventType={3}
+                  />
                 </View>
               </Body>
             </CardItem>

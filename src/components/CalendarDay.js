@@ -6,7 +6,6 @@ import {
   Body,
   Text,
   Container,
-  Badge,
   Left,
   Icon
 } from "native-base";
@@ -14,28 +13,16 @@ import { View } from "react-native";
 
 import style from "../constants/Styles";
 import { AVText } from "./text/AVText";
-import window from "../constants/Layout";
+import { AVBadge } from "./AVBadge";
 export class CalendarDay extends React.Component {
   showEvents = activity => {
     return _.map(activity.activities, event => {
       return (
-        <Badge
-          style={{
-            ...style.badge.style,
-            backgroundColor: style.badge.backgroundColor[event.type],
-          }}
+        <AVBadge 
           key={event.id}
-        >
-          <Text
-            numberOfLines={1}
-            style={{
-              ...style.badge.text.style,
-              color: style.badge.color[event.type]
-            }}
-          >
-            {event.name}
-          </Text>
-        </Badge>
+          eventType={event.type}
+          text={event.name}
+        />
       );
     });
   };
