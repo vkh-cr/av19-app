@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Card,
   List,
   ListItem,
   Left,
@@ -16,6 +15,7 @@ import Color from "../constants/Colors";
 import speakers from "../data/speakers";
 import { DrawerMenuButton } from "../components/DrawerMenuButton";
 import _ from "lodash";
+import { AVText } from "../components/text/AVText";
 
 export class SpeakersScreen extends React.Component {
   static navigationOptions = () => {
@@ -44,7 +44,7 @@ export class SpeakersScreen extends React.Component {
                 <Thumbnail source={speaker.image} />
               </Left>
               <Body>
-                <Text>{speaker.name}</Text>
+                <AVText style={{paddingTop:0}}>{speaker.name}</AVText>
                 <Text note>{speaker.time}</Text>
                 <Text note>{speaker.description.substring(0, 40) + "..."}</Text>
               </Body>

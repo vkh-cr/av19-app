@@ -13,7 +13,10 @@ export default class App extends React.Component {
       Font.loadAsync({
         ...Icon.Ionicons.font,
         'space-mono': require('./src/assets/fonts/SpaceMono-Regular.ttf'),
-        'Roboto_medium': require('./src/assets/fonts/Roboto-Medium.ttf')
+        'Roboto_medium': require('./src/assets/fonts/Roboto-Medium.ttf'),
+        'exo': require('./src/assets/fonts/Exo2-Medium.ttf'),
+        'exo-bold': require('./src/assets/fonts/Exo2-Bold.ttf'),
+        'exo-light': require('./src/assets/fonts/Exo2-Light.ttf'),
       })
     ])
   }

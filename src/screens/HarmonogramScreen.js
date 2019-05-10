@@ -15,7 +15,6 @@ export class HarmonogramScreen extends React.Component {
     return {
       title: "Harmonogram",
       headerLeft: <DrawerMenuButton />,
-      headerTintColor: "black"
     };
   };
 

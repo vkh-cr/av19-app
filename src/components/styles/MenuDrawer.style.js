@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
 	contentWrapper: {
 		flex: 0.9,
 		backgroundColor: 'white',
-		paddingTop: 10,
 		paddingBottom: 450,
 	},
 	link: {

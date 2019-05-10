@@ -21,8 +21,8 @@ export default {
       marginTop: 3,
       marginRight: 3
     },
-    backgroundColor: [Color.darkergreen ,Color.yellow, Color.blue, Color.green],
-    color: [Color.white, ,Color.white, Color.white, Color.white],
+    backgroundColor: [Color.grassGreen, Color.goldenBay, Color.warmOrange, Color.grassGreen],
+    color: [Color.white, Color.black, Color.white, Color.white],
     text: {
       style: {
         fontSize: 15,
@@ -35,13 +35,15 @@ export default {
       backgroundColor: "#fff"
     },
     textStyle: {
-      color: Color.mainColor
+      color: Color.mainColor,
+      fontFamily: 'exo'
     },
     activeTabStyle: {
       backgroundColor: Color.white
     },
     activeTextStyle: {
-      color: Color.navActive
+      color: Color.navActive,
+      fontFamily: 'exo'
     },
     tabBarUnderlineStyle: {
       backgroundColor: Color.navBackground
@@ -52,7 +54,8 @@ export default {
   },
   activity: {
     header: {
-      fontSize: 20
+      fontSize: 20,
+      paddingTop: 0,
     },
     icon: {
       fontSize: 50
@@ -66,7 +69,7 @@ export default {
   },
   header: {
     style: {
-      
+
     },
   },
   time: {

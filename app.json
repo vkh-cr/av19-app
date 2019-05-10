@@ -1,20 +1,24 @@
 {
   "expo": {
-    "name": "drawer",
-    "slug": "drawer",
+    "name": "AV19",
+    "description": "Aplikace pro událost Absolventský Velehrad 2019. Seznam přednášejících, aktivit, harmonogram a další.",
+    "slug": "av-19",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
-      "ios",
       "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./src/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff",
+      "color": "#000000"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#e8eeee"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,6 +28,11 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.vojtechcerveny.av19",
+      "permissions":[
+      ]
     }
   }
 }

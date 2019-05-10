@@ -13,6 +13,7 @@ import {
 import { View } from "react-native";
 
 import style from "../constants/Styles";
+import { AVText } from "./text/AVText";
 
 export class CalendarDay extends React.Component {
   showEvents = activity => {
@@ -53,7 +54,7 @@ export class CalendarDay extends React.Component {
                 <Icon name={activity.icon} />
               </Left>
               <Body>
-                <Text style={style.activity.header}>{activity.name}</Text>
+                <AVText style={style.activity.header}>{activity.name}</AVText>
                 <Text style={style.time.style} note>{activity.time}</Text>
                 <Text note>{activity.location}</Text>
                 <View {...style.badgeView}>

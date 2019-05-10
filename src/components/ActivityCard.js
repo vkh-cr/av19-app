@@ -1,25 +1,22 @@
 import React from 'react';
-import { Image } from 'react-native';
 import { Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base';
+import Styles from '../constants/Styles';
+import { EventHeader, EventTime, EventSpeaker, EventPlace } from './text/AVText';
 export default class ActivityCard extends React.Component {
   render() {
     return (
-      <Card>
+      <Card style={{ borderWidth: 0, borderLeftWidth: 10, borderColor: Styles.badge.backgroundColor[this.props.event.type], borderRadius: 5 }}>
         <CardItem>
-          <Left>
-            <Thumbnail source={this.props.event.speaker.image} />
-            <Body>
-              <Text>{this.props.event.name}</Text>
-              <Text note>{this.props.event.speaker.name}, {this.props.event.time}, {this.props.event.place}</Text>
-            </Body>
-          </Left>
+          <Body>
+            <EventHeader>{this.props.event.name}</EventHeader>
+            <EventTime>{this.props.event.time}</EventTime>
+            <EventPlace>{this.props.event.place}</EventPlace>
+          </Body>
         </CardItem>
         <CardItem cardBody>
-          <Body>
-            <Image
-              source={this.props.event.image}
-              style={{ height: 200, width: '100%', flex: 1 }}
-            />
+          <Thumbnail source={this.props.event.speaker.image} />
+          <Body style={{ justifyContent: 'center' }}>
+            <EventSpeaker>{this.props.event.speaker.name}</EventSpeaker>
           </Body>
         </CardItem>
       </Card>
