@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import Colors from '../constants/Colors';
 import Styles from '../constants/Styles';
 
@@ -21,20 +21,48 @@ const text = {
 export class AVBadge extends React.Component {
 
     render() {
-        eventStyle = {
-            ...container,
-            borderColor: Styles.badge.backgroundColor[this.props.eventType],
-            backgroundColor: Styles.badge.backgroundColor[this.props.eventType],
+
+        if (this.props.event) {
+            const event = this.props.event;
+            eventStyle = {
+                ...container,
+                borderColor: Styles.badge.backgroundColor[event.type],
+                backgroundColor: Styles.badge.backgroundColor[event.type],
+
+            }
+            return <TouchableOpacity style={eventStyle}
+                onPress={() => {
+                    this.props.navigation.navigate("Activity", {
+                        event: event
+                    })
+                }}
+            >
+                <Text
+                    numberOfLines={1}
+                    style={{ ...text, color: Styles.badge.color[event.type], }}
+                >
+                    {event.name}
+                </Text>
+            </TouchableOpacity>
 
         }
-        return <View style={eventStyle}>
-            <Text
-                numberOfLines={1}
-                style={{ ...text, color: Styles.badge.color[this.props.eventType], }}
-            >
-                {this.props.text}
-            </Text>
-        </View>
+        else {
+            eventStyle = {
+                ...container,
+                borderColor: Styles.badge.backgroundColor[this.props.eventType],
+                backgroundColor: Styles.badge.backgroundColor[this.props.eventType],
 
+            }
+            return <View
+                style={eventStyle}
+            >
+                <Text
+                    numberOfLines={1}
+                    style={{ ...text, color: Styles.badge.color[this.props.eventType], }}
+                >
+                    {this.props.text}
+                </Text>
+            </View>
+        }
     }
 }

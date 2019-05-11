@@ -12,11 +12,11 @@ import Colors from "../constants/Colors";
 export class ActivityScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
         return {
-            title: '',
+            title: 'Detail aktivity',
             headerTintColor: "#000",
             headerTitleStyle: {
                 fontWeight: "bold",
-                fontFamily: 'exo'
+                fontFamily: 'exo',
             }
         };
     };

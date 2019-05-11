@@ -18,11 +18,11 @@ export class CalendarDay extends React.Component {
   showEvents = activity => {
     return _.map(activity.activities, event => {
       return (
-        <AVBadge 
-          key={event.id}
-          eventType={event.type}
-          text={event.name}
-        />
+          <AVBadge
+            event={event}
+            key={event.id}
+            navigation={this.props.navigation}
+          />
       );
     });
   };
@@ -35,7 +35,7 @@ export class CalendarDay extends React.Component {
           dataArray={this.props.schelude}
           renderRow={activity => (
             <ListItem avatar style={style.container}>
-              <Left style={{maxWidth: '10%'}}>
+              <Left style={{ maxWidth: '10%' }}>
                 <Icon name={activity.icon} />
               </Left>
               <Body>

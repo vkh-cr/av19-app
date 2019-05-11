@@ -23,6 +23,7 @@ export class HarmonogramScreen extends React.Component {
   }
 
   render() {
+    const { navigation } = this.props;
     return (
       <Container>
         <Tabs
@@ -30,13 +31,13 @@ export class HarmonogramScreen extends React.Component {
           ref={component => (this._tabs = component)}
         >
           <Tab heading="Pátek" {...style.tab}>
-            <CalendarDay schelude={schelude.friday} />
+            <CalendarDay schelude={schelude.friday} navigation={navigation} />
           </Tab>
           <Tab heading="Sobota" {...style.tab}>
-            <CalendarDay schelude={schelude.saturday} />
+            <CalendarDay schelude={schelude.saturday} navigation={navigation} />
           </Tab>
           <Tab heading="Neděle" {...style.tab}>
-            <CalendarDay schelude={schelude.sunday} />
+            <CalendarDay schelude={schelude.sunday} navigation={navigation} />
           </Tab>
         </Tabs>
       </Container>
