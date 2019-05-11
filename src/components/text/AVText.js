@@ -50,8 +50,8 @@ class EventPlace extends React.Component {
 
 class AVText extends React.Component {
   render() {
-    let textStyle = {};
     const { padding, style, bold } = this.props;
+    let textStyle;
     if (padding) {
       textStyle = {
         paddingLeft: 10,
@@ -68,7 +68,7 @@ class AVText extends React.Component {
       <Text
         {...this.props}
         style={{
-          paddingTop: 10, fontFamily: 'exo', fontSize: 18, color: Colors.black, ...textStyle
+          paddingTop: 10, fontFamily: 'exo', fontSize: 18, color: Colors.black, ...style, ...textStyle
         }}
       />
     );
