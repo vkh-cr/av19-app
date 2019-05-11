@@ -13,23 +13,25 @@ import { View } from 'react-native';
 
 import style from '../constants/Styles';
 import { AVText } from './text/AVText';
-import { AVBadge } from './AVBadge';
+import AVBadge from './AVBadge';
 
-export class CalendarDay extends React.Component {
+export default class CalendarDay extends React.Component {
   showEvents = activity => _.map(activity.activities, event => (
     <AVBadge
       event={event}
       key={event.id}
+      // eslint-disable-next-line react/destructuring-assignment
       navigation={this.props.navigation}
     />
   ));
 
   render() {
+    const { schelude } = this.props;
     return (
       <Container>
         <List
           noIndent
-          dataArray={this.props.schelude}
+          dataArray={schelude}
           renderRow={activity => (
             <ListItem avatar style={style.container}>
               <Left style={{ maxWidth: '10%' }}>

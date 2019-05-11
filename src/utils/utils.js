@@ -1,4 +1,4 @@
-export function activeDay() {
+export default function activeDay() {
   const friday = new Date(2019, 5, 17);
   const saturday = new Date(2019, 5, 18);
   const sunday = new Date(2019, 5, 19);

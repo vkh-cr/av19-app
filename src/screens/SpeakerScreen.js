@@ -9,7 +9,7 @@ import {
 import Color from '../constants/Colors';
 import { AVText, AVHeader } from '../components/text/AVText';
 
-export class SpeakerScreen extends React.Component {
+export default class SpeakerScreen extends React.Component {
   static navigationOptions = ({ navigation }) => ({
     title: navigation.getParam('title', 'A Nested Details Screen'),
     headerStyle: {
@@ -31,6 +31,7 @@ export class SpeakerScreen extends React.Component {
     return (
       <Container style={{ backgroundColor: Color.spaceNavy, alignItems: 'center' }}>
         <Image
+          // eslint-disable-next-line global-require
           source={require('../assets/images/avatars/yolo.png')}
           style={{
             width: '40%',

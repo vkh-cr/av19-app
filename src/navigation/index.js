@@ -3,14 +3,12 @@ import {
   createAppContainer
 } from 'react-navigation';
 
-import { WelcomeScreen } from '../screens/WelcomeScreen';
-import { DrawerNavigator } from './DrawerNavigator';
+import DrawerNavigator from './DrawerNavigator';
 
 const AppSwitchNavigator = createSwitchNavigator({
-  MainStack: DrawerNavigator,
-  Welcome: WelcomeScreen,
+  MainStack: DrawerNavigator
 });
 
 const AppNavigator = createAppContainer(AppSwitchNavigator);
 
-export { AppNavigator };
+export default AppNavigator;

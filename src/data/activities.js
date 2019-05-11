@@ -11,10 +11,6 @@ function placeById(id) {
   return _.find(place, ['id', id]).place;
 }
 
-function getName(speaker) {
-  return speaker.name;
-}
-
 function getTime(block) {
   switch (block) {
     case 0:
@@ -34,7 +30,7 @@ function getTime(block) {
     case 7:
       return 'Sobota 13:40 - 15:00';
     default:
-      break;
+      return '';
   }
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-multi-comp */
 import React from 'react';
 import { Text, Linking } from 'react-native';
 import Colors from '../../constants/Colors';
@@ -33,6 +34,7 @@ class EventSpeaker extends React.Component {
       <Text
         {...this.props}
         style={{
+          // eslint-disable-next-line react/destructuring-assignment
           fontFamily: 'exo', fontSize: 18, color: Colors.gray, ...this.props.style
         }}
       />
@@ -48,24 +50,25 @@ class EventPlace extends React.Component {
 
 class AVText extends React.Component {
   render() {
-    let { style } = this.props;
-    if (this.props.padding) {
-      style = {
+    let textStyle = {};
+    const { padding, style, bold } = this.props;
+    if (padding) {
+      textStyle = {
         paddingLeft: 10,
-        ...this.props.style
+        ...style
       };
     }
-    if (this.props.bold) {
-      style = {
+    if (bold) {
+      textStyle = {
         fontFamily: 'exo-bold',
-        ...this.props.style
+        ...style
       };
     }
     return (
       <Text
         {...this.props}
         style={{
-          paddingTop: 10, fontFamily: 'exo', fontSize: 18, color: Colors.black, ...style
+          paddingTop: 10, fontFamily: 'exo', fontSize: 18, color: Colors.black, ...textStyle
         }}
       />
     );
@@ -92,14 +95,18 @@ class AVHeader2 extends React.Component {
 
 class Anchor extends React.Component {
   _handlePress = () => {
-    Linking.openURL(this.props.href);
-    this.props.onPress && this.props.onPress();
+    const { href, onPress } = this.props;
+    Linking.openURL(href);
+    // eslint-disable-next-line no-unused-expressions, react/destructuring-assignment
+    onPress && this.props.onPress();
   };
 
   render() {
+    const { children } = this;
     return (
+      // eslint-disable-next-line no-underscore-dangle
       <Text {...this.props} style={{ color: Colors.orange, fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={this._handlePress}>
-        {this.props.children}
+        {children}
       </Text>
     );
   }

@@ -6,13 +6,14 @@ import ActivityCard from './ActivityCard';
 
 export default class ActivityTab extends React.Component {
   render() {
+    const { activities, navigation } = this.props;
     return (
       <Content padder>
-        {_.map(this.props.activities, activity => (
+        {_.map(activities, activity => (
           <TouchableHighlight
             key={activity.id}
             onPress={() => {
-              this.props.navigation.navigate('Activity', {
+              navigation.navigate('Activity', {
                 event: activity,
                 title: activity.name
               });

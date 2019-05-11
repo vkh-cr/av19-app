@@ -4,8 +4,8 @@ import {
   createDrawerNavigator
 } from 'react-navigation';
 
-import { MainStackNavigator } from './MainStackNavigator';
-import { MenuDrawer } from '../components/MenuDrawer';
+import MainStackNavigator from './MainStackNavigator';
+import MenuDrawer from '../components/MenuDrawer';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -21,4 +21,4 @@ const DrawerNavigator = createDrawerNavigator(
   DrawerConfig
 );
 
-export { DrawerNavigator };
+export default DrawerNavigator;

@@ -13,16 +13,17 @@ const container = {
   backgroundColor: Colors.grassGreen,
   maxWidth: '90%',
 };
-const text = {
+const textStyle = {
   fontFamily: 'exo',
   flex: 1,
 };
 
-export class AVBadge extends React.Component {
+export default class AVBadge extends React.Component {
   render() {
+    // eslint-disable-next-line react/destructuring-assignment
     if (this.props.event) {
-      const { event } = this.props;
-      eventStyle = {
+      const { event, navigation } = this.props;
+      const eventStyle = {
         ...container,
         borderColor: Styles.badge.backgroundColor[event.type],
         backgroundColor: Styles.badge.backgroundColor[event.type],
@@ -32,25 +33,25 @@ export class AVBadge extends React.Component {
         <TouchableOpacity
           style={eventStyle}
           onPress={() => {
-            this.props.navigation.navigate('Activity', {
+            navigation.navigate('Activity', {
               event
             });
           }}
         >
           <Text
             numberOfLines={1}
-            style={{ ...text, color: Styles.badge.color[event.type], }}
+            style={{ ...textStyle, color: Styles.badge.color[event.type], }}
           >
             {event.name}
           </Text>
         </TouchableOpacity>
       );
     }
-
-    eventStyle = {
+    const { text, eventType } = this.props;
+    const eventStyle = {
       ...container,
-      borderColor: Styles.badge.backgroundColor[this.props.eventType],
-      backgroundColor: Styles.badge.backgroundColor[this.props.eventType],
+      borderColor: Styles.badge.backgroundColor[eventType],
+      backgroundColor: Styles.badge.backgroundColor[eventType],
 
     };
     return (
@@ -59,9 +60,9 @@ export class AVBadge extends React.Component {
       >
         <Text
           numberOfLines={1}
-          style={{ ...text, color: Styles.badge.color[this.props.eventType], }}
+          style={{ ...textStyle, color: Styles.badge.color[eventType], }}
         >
-          {this.props.text}
+          {text}
         </Text>
       </View>
     );

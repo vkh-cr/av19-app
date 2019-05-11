@@ -9,9 +9,9 @@ const ButtonComponent = ({ navigation }) => (
     style={{ paddingLeft: 20 }}
     size={32}
     onPress={navigation.toggleDrawer}
-		/>
+  />
 );
 
 const DrawerMenuButton = withNavigation(ButtonComponent);
 
-export { DrawerMenuButton };
+export default DrawerMenuButton;

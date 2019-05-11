@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from 'react-native';
 import {
-  List, ListItem, Text, Container, Header, Content, Icon
+  List, ListItem, Container, Header, Content, Icon
 } from 'native-base';
 import { withNavigation } from 'react-navigation';
 import style from '../constants/Styles';
@@ -49,4 +49,4 @@ const MenuContainer = ({ navigation }) => {
 
 const MenuDrawer = withNavigation(MenuContainer);
 
-export { MenuDrawer };
+export default MenuDrawer;

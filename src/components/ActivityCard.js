@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Card, CardItem, Thumbnail, Text, Left, Body
+  Card, CardItem, Thumbnail, Body
 } from 'native-base';
 import Styles from '../constants/Styles';
 import {
@@ -9,22 +9,26 @@ import {
 
 export default class ActivityCard extends React.Component {
   render() {
+    const {
+      type, name, time, place, speaker
+    // eslint-disable-next-line react/destructuring-assignment
+    } = this.props.event;
     return (
       <Card style={{
-        borderWidth: 0, borderLeftWidth: 10, borderColor: Styles.badge.backgroundColor[this.props.event.type], borderRadius: 5
+        borderWidth: 0, borderLeftWidth: 10, borderColor: Styles.badge.backgroundColor[type], borderRadius: 5
       }}
       >
         <CardItem>
           <Body>
-            <EventHeader>{this.props.event.name}</EventHeader>
-            <EventTime>{this.props.event.time}</EventTime>
-            <EventPlace>{this.props.event.place}</EventPlace>
+            <EventHeader>{name}</EventHeader>
+            <EventTime>{time}</EventTime>
+            <EventPlace>{place}</EventPlace>
           </Body>
         </CardItem>
         <CardItem cardBody>
-          <Thumbnail source={this.props.event.speaker.image} />
+          <Thumbnail source={speaker.image} />
           <Body style={{ justifyContent: 'center' }}>
-            <EventSpeaker>{this.props.event.speaker.name}</EventSpeaker>
+            <EventSpeaker>{speaker.name}</EventSpeaker>
           </Body>
         </CardItem>
       </Card>

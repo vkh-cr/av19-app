@@ -7,12 +7,12 @@ import {
   CardItem,
   Body,
 } from 'native-base';
-import { DrawerMenuButton } from '../components/DrawerMenuButton';
+import DrawerMenuButton from '../components/DrawerMenuButton';
 
 import {
   Anchor, AVText, AVHeader, AVHeader2
 } from '../components/text/AVText';
-import { AVBadge } from '../components/AVBadge';
+import AVBadge from '../components/AVBadge';
 
 class HomeScreen extends React.Component {
   static navigationOptions = () => ({
@@ -128,4 +128,4 @@ V případě zdravotních potíží kontaktuj naši zdravotnici Evu Výkrutovou 
   }
 }
 
-export { HomeScreen };
+export default HomeScreen;

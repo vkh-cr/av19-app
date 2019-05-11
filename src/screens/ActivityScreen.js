@@ -6,14 +6,13 @@ import {
   Container,
   Grid, Col, Row
 } from 'native-base';
-import Color from '../constants/Colors';
 import {
-  AVText, PageHeader, EventTime, EventPlace, EventSpeaker, AVHeader
+  AVText, PageHeader, EventSpeaker
 } from '../components/text/AVText';
-import Colors from '../constants/Colors';
+import Color from '../constants/Colors';
 
-export class ActivityScreen extends React.Component {
-    static navigationOptions = ({ navigation }) => ({
+export default class ActivityScreen extends React.Component {
+    static navigationOptions = () => ({
       title: 'Detail aktivity',
       headerTintColor: '#000',
       headerTitleStyle: {

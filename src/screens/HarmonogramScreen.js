@@ -1,18 +1,17 @@
+/* eslint-disable no-underscore-dangle */
 import React from 'react';
-import _ from 'lodash';
-
 import {
-  Container, Content, Tab, Tabs
+  Container, Tab, Tabs
 } from 'native-base';
 
-import { CalendarDay } from '../components/CalendarDay';
-import { DrawerMenuButton } from '../components/DrawerMenuButton';
+import CalendarDay from '../components/CalendarDay';
+import DrawerMenuButton from '../components/DrawerMenuButton';
 
-import { activeDay } from '../utils/utils';
+import activeDay from '../utils/utils';
 import style from '../constants/Styles';
 import schelude from '../data/schelude';
 
-export class HarmonogramScreen extends React.Component {
+export default class HarmonogramScreen extends React.Component {
   static navigationOptions = () => ({
     title: 'Harmonogram',
     headerLeft: <DrawerMenuButton />,
@@ -28,6 +27,7 @@ export class HarmonogramScreen extends React.Component {
       <Container>
         <Tabs
           tabBarUnderlineStyle={style.tab.tabBarUnderlineStyle}
+          // eslint-disable-next-line no-return-assign
           ref={component => (this._tabs = component)}
         >
           <Tab heading="Pátek" {...style.tab}>

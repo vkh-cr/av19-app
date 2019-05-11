@@ -6,9 +6,9 @@ import {
   CardItem,
   Body,
 } from 'native-base';
-import { DrawerMenuButton } from '../components/DrawerMenuButton';
+import DrawerMenuButton from '../components/DrawerMenuButton';
 import {
-  PageHeader, Anchor, AVHeader, AVText
+  AVHeader, AVText
 } from '../components/text/AVText';
 
 
@@ -62,4 +62,4 @@ Během celého setkání se můžeš
   }
 }
 
-export { SpiritScreen };
+export default SpiritScreen;
