@@ -28,7 +28,7 @@ export default class SpeakerScreen extends React.Component {
                 width: window.width,
                 borderRadius: 500,
               }}
-
+              resizeMode="contain"
             />
           </View>
 
