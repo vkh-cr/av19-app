@@ -67,7 +67,7 @@ export default {
       time: '12:40 - 13:40',
       location: 'Stojanov - jídelna'
     }, {
-      name: 'Zpovědi, volčas. aktivity, atd.',
+      name: 'BLOK PO-O',
       time: '13:40 - 15:00',
       location: 'Velehrad',
       activities: _.filter(activities, ['block', 7])

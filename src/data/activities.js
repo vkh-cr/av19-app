@@ -46,7 +46,8 @@ export default [
     day: 1,
     block: 0,
     type: 2,
-    place: placeById(8)
+    place: placeById(8),
+    capacity: 999
   },
   {
     id: 8,
@@ -59,7 +60,8 @@ export default [
     day: 1,
     block: null,
     type: 2,
-    place: placeById(14)
+    place: placeById(14),
+    capacity: 999
   },
   {
     id: 9,
@@ -72,7 +74,8 @@ export default [
     day: 0,
     block: null,
     type: 2,
-    place: placeById(3)
+    place: placeById(3),
+    capacity: 999,
   },
   {
     id: 10,
@@ -85,14 +88,15 @@ export default [
     day: 1,
     block: 4,
     type: 2,
-    place: placeById(1)
+    place: placeById(1),
+    capacity: 999,
   },
   {
     id: 100,
     name: 'Čo je dobre vedieť pred manželstvom',
     speaker: speakerById(10),
     time: getTime(1),
-    description: '',
+    description: 'Dnes si väčšina mladých ľudí vyberá z dvoch možností. Žiť spolu bez manželstva alebo vstúpia do manželstva nepripravení. Čo je manželstvo a ako sa naň treba pripraviť? Prečo je manželstvo lepšia voľba akožiť spolu bez záväzku? Na tieto otázky aj mnohé iné radi zodpovieme...',
     image: require('../assets/images/activities/activity1.png'),
     day: 1,
     block: 1,
@@ -162,7 +166,8 @@ export default [
     day: 1,
     block: 2,
     type: 1,
-    place: placeById(5)
+    place: placeById(5),
+    capacity: 40,
   },
   {
     id: 106,
@@ -175,7 +180,7 @@ export default [
     block: 2,
     type: 1,
     place: placeById(9),
-    capacity: 30
+    capacity: 30,
   },
   {
     id: 107,
@@ -205,7 +210,7 @@ export default [
   },
   {
     id: 109,
-    name: 'Cestovatelská přednáška',
+    name: 'Patagonie a jiná zákoutí',
     speaker: speakerById(23),
     time: getTime(2),
     description: 'Jaké to bylo v Patagonii? Nateklo mi do bot? A jaké to je vlastně stále pendlovat mezi odlišnými světy? Je vůbec možné poznat cizí zemi skrz cestování nebo je lepší se tam rovnou nastěhovat a najít si práci? Kdy je lepší cestovat sám a kdy s partnerem? Kolik toho člověk vlastně unese na zádech a proč by k tomu měl tahat ještě hudební nástroje? Je španělština všude španělštinou? Vypadá to v Patagonii jako na Aljašce? O tom a možná taky úplně o něčem jiném bych si s Vámi v sobotu ráda popovídala.',
@@ -213,7 +218,8 @@ export default [
     day: 1,
     block: 7,
     type: 1,
-    place: placeById(10)
+    place: placeById(10),
+    capacity: 30,
   },
   {
     id: 110,
@@ -225,7 +231,8 @@ export default [
     day: 1,
     block: 3,
     type: 1,
-    place: placeById(5)
+    place: placeById(5),
+    capacity: 50,
   },
   {
     id: 111,
@@ -250,7 +257,8 @@ export default [
     day: 2,
     block: 5,
     type: 1,
-    place: placeById(3)
+    place: placeById(3),
+    capacity: 70,
   },
   {
     id: 113,
@@ -382,7 +390,7 @@ export default [
     block: 2,
     type: 0,
     place: placeById(11),
-    capacity: 25
+    capacity: 15
   },
   {
     id: 203,
@@ -434,7 +442,8 @@ export default [
     day: 1,
     block: 3,
     type: 2,
-    place: placeById(14)
+    place: placeById(14),
+    capacity: 20,
   },
   {
     id: 207,
@@ -447,19 +456,21 @@ export default [
     day: 1,
     block: 3,
     type: 2,
-    place: placeById(8)
+    place: placeById(8),
+    capacity: 30
   },
   {
     id: 208,
     name: 'Setkání regionů',
     speaker: speakerById(0),
-    time: 'sobota 19:30 - 20:00',
-    description: '',
+    time: 'Sobota 19:30 - 20:00',
+    description: 'Cítíme, že každý mladý člověk potřebuje společenství, kam patří a kdese cítí doma. Mnohdy se v záplavě informací ztrácí kontakt a najít dobré společenství je dřina. Nabízíme ti prostor, kde se můžeš potkat s dalšími věřícími (třeba i z tvého regionu) a domluvit se s nimi na pravidelném setkávání či jiné aktivitě. Věříme, že v každém z nás je obrovský potenciál a společně dokážeme velké věci! Pojďme do toho!',
     image: require('../assets/images/activities/activity1.png'),
     day: 1,
-    block: null,
+    block: 4,
     type: 2,
-    place: placeById(8)
+    place: placeById(8),
+    capacity: 999,
   },
   {
     id: 209,
@@ -472,55 +483,60 @@ export default [
     day: 1,
     block: 4,
     type: 2,
-    place: placeById(8)
+    place: placeById(8),
+    capacity: 999,
   },
   {
     id: 210,
     name: 'Poprvé na Velehradu',
     speaker: speakerById(0),
-    time: '20:00 - 21:00',
+    time: 'Pátek 20:00 - 21:00',
     description: 'Jsi poprvé na Velehradu? Chceš se seznámit s okolím a třeba dalšími lidmi, abys AV prožil ve společenství? Přidej se k nám na poznávací projížďku po Velehradu. Sejdeme se hned po mši svaté venku, před Stojanovem (hlavní budovou).',
     image: require('../assets/images/activities/activity1.png'),
     day: 0,
     block: 0,
     type: 2,
     place: placeById(14),
+    capacity: 999,
   },
   {
     id: 211,
     name: 'Swinguj do hodiny',
-    speaker: speakerById(28),
-    time: '20:00 - 21:00',
-    description: '',
+    speaker: speakerById(29),
+    time: 'Sobota 20:00 - 21:00',
+    description: 'Na workshopu tě naučíme základům swingového tance Lindy Hop, což  je tanec, který se nejčastěji tančil na swingovou hudbu. Vznikl spontánně na tančírnách v Harlemu v New Yorku mezi 20-30. lety 20. století.  Jde o společenský tanec, často veselý a energický, u kterého se střídají partneři. Je ideální na to se pořádně vyřádit a odreagovat! Dresscode: pohodlné oblečení, obuv – nízké podpatky.',
     image: require('../assets/images/activities/activity1.png'),
     day: 1,
     block: 4,
     type: 2,
     place: placeById(7),
+    capacity: '???'
   },
   {
     id: 212,
     name: 'Strachy a strašáci, co limitují naše životy',
     speaker: speakerById(30),
-    time: '9:00-10:00, 10:20-11:20',
+    time: getTime(5),
     description: 'Pakliže máme plně vyvinuté sebevědomí, jsme si dobře vědomi svých nedostatků i silných stránek. Přesto někdy není snadné vykročit vpřed. Co nám brání, a co nás posiluje?.. Workshop nebude přednáškový, ale budeme pracovat s vašimi konkrétními vstupy a situacemi. ',
     image: require('../assets/images/activities/activity1.png'),
     day: 2,
-    block: [5, 6],
+    block: 5,
     type: 2,
-    place: placeById(1)
+    place: placeById(1),
+    capacity: 10
   },
   {
     id: 213,
     name: 'Netradiční sporty - frisbee',
     speaker: speakerById(17),
     time: getTime(6),
-    description: '',
+    description: 'Frisbí. Frisbíčko. Hážeš, hraješ, makáš, směješ se. Dojdi, bude sranda.',
     image: require('../assets/images/activities/activity1.png'),
     day: 2,
     block: 6,
     type: 2,
-    place: placeById(14)
+    place: placeById(14),
+    capacity: 20,
   },
   {
     id: 214,
@@ -533,31 +549,47 @@ export default [
     day: 1,
     block: 7,
     type: 2,
-    place: placeById(4)
+    place: placeById(4),
+    capacity: 999,
+  },
+  {
+    id: 215,
+    name: 'Strachy a strašáci, co limitují naše životy',
+    speaker: speakerById(30),
+    time: getTime(6),
+    description: 'Pakliže máme plně vyvinuté sebevědomí, jsme si dobře vědomi svých nedostatků i silných stránek. Přesto někdy není snadné vykročit vpřed. Co nám brání, a co nás posiluje?.. Workshop nebude přednáškový, ale budeme pracovat s vašimi konkrétními vstupy a situacemi. ',
+    image: require('../assets/images/activities/activity1.png'),
+    day: 2,
+    block: 6,
+    type: 2,
+    place: placeById(1),
+    capacity: 10
   },
   {
     id: 300,
     name: 'Chvály',
     speaker: speakerById(0),
     time: getTime(0),
-    description: '',
+    description: 'Večer chval můžeš prožít společně i s chválovou kapelou Lamačské chvály ze Slovenska. Jejich touhou je uctívat a chválit Boha, jedině on je jediný schopen naslouchat vždy a všude. Když se Lamačských chval zeptáš, kdo je to publikum pro které chtějí hrát, odpoví Ti - je to Bůh, neboť on dokáže naslouchat stále. A tak pokud to i Tebe táhne, přijď a odevzdej se. Cílem chval jsou prorocké chvály a jejich šíření se všude.',
     image: require('../assets/images/activities/activity1.png'),
     day: 0,
     block: 0,
     type: 3,
-    place: placeById(7)
+    place: placeById(7),
+    capacity: 999,
   },
   {
     id: 301,
     name: 'Přímluvná modlitba',
-    speaker: speakerById(0),
+    speaker: speakerById(32),
     time: getTime(3),
-    description: '',
+    description: 'Existuje mnoho způsobů modlitby. Patří mezi ně i modlitba přímluvná, která vytryskne naprosto spontánně, když se v člověku setkají víra v Boha a láska k druhým lidem: Víra v Boha, protože přímluvou vyznáváme, že Bůh může a chce vykonat pro druhého dobro neskonale větší, než jakého je schopen člověk. A láska k bližnímu, protože nebýt lhostej ný k nouzi druhého a chtít pro druhé dobro je projevem lásky. V mnoha  případech totiž chceme pro někoho skutečně to nejlepší, ale nemůže me mu to dát - zde se otevírá prostor pro přímluvnou modlitbu.',
     image: require('../assets/images/activities/activity1.png'),
     day: 1,
     block: 3,
     type: 3,
-    place: placeById(3)
+    place: placeById(3),
+    capacity: 56
   },
   {
     id: 302,
@@ -569,6 +601,7 @@ export default [
     day: 1,
     block: 4,
     type: 3,
-    place: placeById(3)
+    place: placeById(3),
+    capacity: 999
   },
 ];

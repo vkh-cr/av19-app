@@ -6,7 +6,7 @@ export default [
     name: 'tým AV19',
     description:
       'Nejlepší tým :)',
-    image: require('../assets/images/avatars/man1.png')
+    image: require('../assets/images/people/av-tym.png')
   },
   {
     id: 1,
@@ -55,7 +55,7 @@ export default [
     name: 'Petr Beneš Praha',
     description:
       'Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/man4.png')
   },
   {
     id: 10,
@@ -82,7 +82,7 @@ export default [
     id: 13,
     name: 'Manželé Míla a Pavel Bajerovi',
     description: 'Míla a Pavel Bajerovi jsou organizátoři a lektoři vztahových a jiných kursů Manželské večery, Manželství na dobré cestě, Příprava na manželství, Hranice (nejen) v partnerských vztazích či Peníze a já v Brně u jezuitů. Míla vystudovala teologické nauky na CMTF. Momentálně koordinuje vzdělávací aktivity v Institutu Bernarda Bolzana. Pavel získal doktorát v sociální práci na MU v Brně. V minulosti učil na FSS MU a vedl časopis Sociální práce/Sociálna práca. V současnosti pracuje jako osobní vztahový kouč v seznamovací agentuře Date2k. Míla a Pavel jsou svoji už 11 let a ve volném čase chodí po kopcích a cestují.',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/man1.png')
   },
   {
     id: 14,
@@ -105,15 +105,15 @@ export default [
   {
     id: 17,
     name: 'Jakub Konček',
-    description: '',
-    image: require('../assets/images/avatars/man3.png')
+    description: 'Jakub Konček můžete považovat za sporťáka AVčka. Má ranní rozcvičky a netradiční sporty -> intercross a frisbee ultimate! Pokud si chcete zasportovat, tak určitě s Jakubem.',
+    image: require('../assets/images/avatars/man4.png')
   },
   {
     id: 18,
     name: 'Petr Beneš Brno',
     description:
       'Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/man1.png')
   },
   {
     id: 19,
@@ -141,28 +141,28 @@ export default [
     name: 'Lukáš Rieger',
     description:
       'Lukáš Rieger absolvoval studium činoherního herectví na Divadelní fakultě JAMU – v magisterském i doktorském stupni (disertace má název O přesahu v herectví : Teologická hermeneutika divadelní antropologie podle Exerciií Ignáce z Loyoly). Pohostinsky účinkoval v různých brněnských divadlech – od roku 2006 je hercem nezávislého divadla BURANTEATR. Mezi jeho nejvýznamnější divadelní zkušenosti patří stáž na tradiční ruské herecké škole – Institutu Borise Ščukina v Moskvě. Od roku 2003 působí jako pedagog herectví na JAMU – od roku 2014 je vedoucím vlastního ateliéru. Ženatý. Katolík. Výrobce ovocných vín. ',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/man2.png')
   },
   {
     id: 23,
     name: 'Markéta Grigarová',
     description:
       'Jmenuji se Marketa Grigarová a posledních 8 let jsem žila někde mezi Brnem, Aljaškou, Peru a Irskem. Krása a energie Latinské Ameriky mi očarovala natolik, že jsem se po životě v Peru rozhodla nevrátit "domů", ale ještě na pár měsíců procestovat magickou krajinu Patagonie. ',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/woman2.png')
   },
   {
     id: 24,
     name: 'Eva Čepelková',
     description:
       'Eva Čepelková je manželka a matka, lektorka angličtiny a překladatelka. Aby se na mateřské nezbláznila, prochází výcvikem Mediace pro život. Má ráda nenásilnou komunikaci a chtěla by se podělit o to, co pro ni znamená.',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/woman2.png')
   },
   {
     id: 25,
     name: 'Leona Ondrušková',
     description:
       'Leona Ondrušková  je vizážistka / maskérka, fotografka a nadšená cestovatelka. Má za sebou make-up spolupráci s Českou Miss, předními zlínskými firmami a vlastní vizážistické studio. Zaměřuje se na tvorbu celkové svatební vizáže, reklamní makeup, ale i osobní klientelu, kterou učí nalézt pomocí kurzů líčení většímu sebevědomí. Podílí se také na kreativním tvoření masek pro fashion designéry a filmová natáčení. Vyznává individuální přístup ke každému a miluje přirozený makeup.',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/woman1.png')
   },
   {
     id: 26,
@@ -174,32 +174,38 @@ export default [
   {
     id: 27,
     name: 'Jan Balák',
-    description: '',
+    description: 'Challenger, otec, zakladatel Albánské výzvy, cestovatel, konstruktér, majitel stavební mini firmy i autor myšlenky domu pro mladé páry Solodum.cz.',
     image: require('../assets/images/people/jan-balak.jpg')
   },
   {
     id: 28,
-    name: 'E. Šimečková',
-    description: '',
-    image: require('../assets/images/avatars/man3.png')
+    name: 'E. Šimecká',
+    description: 'Povede modlitbu tancem. Ze společenství žen z Brna - Biskupské. Chceš-li vědět víc, Dojdi na její workshop.',
+    image: require('../assets/images/avatars/woman3.png')
   },
   {
     id: 29,
     name: 'M. Štěpánová & J. Repčík',
     description: 'Markéta Štěpánová a Juraj Repčík, absolventi swingové školy Swing Wings, našli zalíbení ve swingovém tanci z prvorepublikové doby, který se vyznačuje svou uvolněností a improvizovaností. Lindy Hop je tanec, který se nejčastěji tančil na swingovou hudbu. Vznikl spontánně na tančírnách v Harlemu v New Yorku mezi 20-30. lety 20. století. Jde o společenský tanec, často veselý a energický, u kterého se střídají partneři. Je ideální na to se pořádně vyřádit a odreagovat! Na workshopu vás naučíme úplným základům swingového tance Lindy Hop, což vám bude stačit k tomu, abyste protančili celou noc. \n\nDresscode: pohodlné oblečení, obuv – nízké podpatky',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/man1.png')
   },
   {
     id: 30,
     name: 'Tomáš Novák',
     description: 'Ing. Tomáš Novák pracuje ve své soukromé praxi jako individuální či párový psychoterapeut, a v obchodních firmách externě jako kouč pro oblast rozvoje lidí, vedení jednání, řízení týmu či projektů a rozvoj obchodu. Než objevil kouzlo psychoterapie a absolvoval pětiletý výcvik v existenciální analýze/logoterapii, pracoval v nadnárodních IT, telekomunikačních a bankovních společnostech jako projektový manažer nebo obchodní kouč.',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/avatars/man2.png')
   },
   {
     id: 31,
     name: 'Josef Pejchal',
     description: 'Josef Pejchal se zhruba před deseti lety stal miláčkem tisíců českých žen (v slavných počátcích Ordinace v růžové zahradě), jinak úspěšný divadelní herec (Východočeské divadlo Pardubice) a velice produktivní dabér – český Spiderman, Dr. Strange, Sherlock Holmes, Lancelot ze Shreka i Nikolaj z Vojny a míru. Odmala dítě s uměleckými sklony, později absolvent pražské konzervatoře, před pardubickým angažmá herec v olomouckém Moravském divadle i Černém divadle Jiřího Srnce, s nímž procestoval svět. Kluk z velké katolické rodiny a aktivní amatérský sportovec. ',
     image: require('../assets/images/people/josef-pejchal.jpg')
+  },
+  {
+    id: 32,
+    name: 'SM Bernadeta Bednaříková OSF',
+    description: 'SM Bernadeta Bednaříková OSF je vysokoškolská františkánka, která do komunity přišla v roce 2008. Po noviciátě působila sedm let ve farní pastoraci v Brně  a v Liberci. Nyní je vychovatelkou v domově mládeže v Praze. Ráda se s tebou  podělí o své svědectví ve službě přímluvné modlitby, kterou si během AV společně s ní budeš moci vyzkoušet.',
+    image: require('../assets/images/avatars/woman1.png')
   }
 
 ];
