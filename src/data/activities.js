@@ -180,7 +180,7 @@ export default [
   {
     id: 107,
     name: 'Být člověkem a společností s hodnotami po dvou totalitách?',
-    speaker: `${speakerById(2)} & ${speakerById(3)}`,
+    speaker: [speakerById(2), speakerById(3)],
     time: getTime(2),
     description: 'Známe je z televize, textů i sociálních sítí - dnes se jich však můžeme ptát přímo, a to na jejich bohaté životní zkušenosti, tak na fungování jednotlivce v současném světě. Beseda zaměřená na zapojení člověka ve společnosti, na současné tendence a tlaky a jejich kořeny, nevyléčené rány z problematické minulosti státu, na odpovědnost člověka “viditelného” a aktivního na formování společnosti a jejího veřejného mínění, přinese i postřehy z bádání Jiřího Padevěta o životě na našem území během nacismu a komunismu či diskuzi nad tím, co jsou křesťanské hodnoty, o kterých se tolik mluví.',
     image: require('../assets/images/activities/activity1.png'),
