@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { View, Button } from 'react-native'
+import React, { Component } from 'react';
+import { View, Button } from 'react-native';
 
 class WelcomeScreen extends Component {
   render() {
-    const { navigation } = this.props
+    const { navigation } = this.props;
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Button title="Login" onPress={navigation.navigate('Dashboard')} />
@@ -13,4 +13,4 @@ class WelcomeScreen extends Component {
   }
 }
 
-export { WelcomeScreen }
+export { WelcomeScreen };

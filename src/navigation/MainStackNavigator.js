@@ -1,13 +1,14 @@
-import { createStackNavigator } from "react-navigation";
+import { createStackNavigator } from 'react-navigation';
 
-import { HomeScreen } from "../screens/HomeScreen";
-import { LinkScreen } from "../screens/LinkScreen";
-import { SpeakersScreen } from "../screens/SpeakersScreen";
-import { ActivitiesScreen } from "../screens/ActivitiesScreen";
-import { ActivityScreen } from "../screens/ActivityScreen";
-import { HarmonogramScreen } from "../screens/HarmonogramScreen";
-import { SpeakerScreen } from "../screens/SpeakerScreen";
-import { SpiritScreen } from "../screens/SpiritScreen";
+import { HomeScreen } from '../screens/HomeScreen';
+import { LinkScreen } from '../screens/LinkScreen';
+import { SpeakersScreen } from '../screens/SpeakersScreen';
+import { ActivitiesScreen } from '../screens/ActivitiesScreen';
+import { ActivityScreen } from '../screens/ActivityScreen';
+import { HarmonogramScreen } from '../screens/HarmonogramScreen';
+import { SpeakerScreen } from '../screens/SpeakerScreen';
+import { SpiritScreen } from '../screens/SpiritScreen';
+
 const MainStackNavigator = createStackNavigator(
   {
     Home: HomeScreen,
@@ -18,10 +19,10 @@ const MainStackNavigator = createStackNavigator(
     Harmonogram: HarmonogramScreen,
     Speaker: SpeakerScreen,
     Spirit: SpiritScreen,
-  },  
+  },
   {
     defaultNavigationOptions: {
-      headerTintColor: "black",
+      headerTintColor: 'black',
       headerStyle: {
         // elevation: 0,
         // shadowOpacity: 0,
@@ -32,7 +33,7 @@ const MainStackNavigator = createStackNavigator(
       },
       headerTitleStyle: {
         fontFamily: 'exo',
-        fontWeight:undefined,
+        fontWeight: undefined,
       }
     }
   }

@@ -1,4 +1,4 @@
-import Color from "./Colors";
+import Color from './Colors';
 
 export default {
   textContent: {
@@ -6,11 +6,11 @@ export default {
   },
   container: {
     minHeight: 50,
-    width: "100%"
+    width: '100%'
   },
   badgeView: {
     style: {
-      flexWrap: "wrap",
+      flexWrap: 'wrap',
       flexDirection: 'row',
     }
   },
@@ -20,7 +20,7 @@ export default {
   },
   tab: {
     tabStyle: {
-      backgroundColor: "#fff"
+      backgroundColor: '#fff'
     },
     textStyle: {
       color: Color.mainColor,
@@ -63,7 +63,7 @@ export default {
   time: {
     style: {
       color: Color.navy,
-      fontWeight: "bold"
+      fontWeight: 'bold'
     }
   }
 };

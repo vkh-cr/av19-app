@@ -1,24 +1,24 @@
-import React from "react";
-import { View } from "react-native";
+import React from 'react';
+import { View } from 'react-native';
 import {
   Container,
   Content,
   Card,
   CardItem,
   Body,
-} from "native-base";
-import { DrawerMenuButton } from "../components/DrawerMenuButton";
+} from 'native-base';
+import { DrawerMenuButton } from '../components/DrawerMenuButton';
 
-import style from "../constants/Styles"
-import { PageHeader, Anchor, AVText, AVHeader, AVHeader2 } from "../components/text/AVText";
-import { AVBadge } from "../components/AVBadge";
+import {
+  Anchor, AVText, AVHeader, AVHeader2
+} from '../components/text/AVText';
+import { AVBadge } from '../components/AVBadge';
+
 class HomeScreen extends React.Component {
-  static navigationOptions = () => {
-    return {
-      title: "Důležité informace",
-      headerLeft: <DrawerMenuButton />,
-    };
-  };
+  static navigationOptions = () => ({
+    title: 'Důležité informace',
+    headerLeft: <DrawerMenuButton />,
+  });
 
   render() {
     return (
@@ -33,7 +33,8 @@ class HomeScreen extends React.Component {
                   paddingTop: 10,
                   flexDirection: 'row',
                   flexWrap: 'wrap',
-                }}>
+                }}
+                >
 
                   <AVBadge
                     text="Přednášky"
@@ -63,8 +64,20 @@ class HomeScreen extends React.Component {
                 <AVText padding>- můžeš si zde zapůjčit sportovní náčiní, deky či společenské hry</AVText>
                 <AVText padding>- budou zde aktuální informace o zpovědích, duchovních rozhovorech a o setkání s psychoterapeutem a koučem</AVText>
                 <AVText padding>- zde ti také odpoví na veškeré dotazy (nebo zjistí odpověď).</AVText>
-                <AVText>Sleduj aktuální informace na <Anchor href="https://www.facebook.com/absolventskyvelehrad/">Facebooku</Anchor>  a <Anchor href="https://instagram.com/absolventskyvelehrad/">Instagramu</Anchor> #av19</AVText>
-                <AVText>V případě zdravotních potíží kontaktuj naši zdravotnici Evu Výkrutovou (tel. <Anchor href="tel:+420602281238">602 281 238</Anchor>)</AVText>
+                <AVText>
+Sleduj aktuální informace na
+                  <Anchor href="https://www.facebook.com/absolventskyvelehrad/">Facebooku</Anchor>
+                  {' '}
+a
+                  <Anchor href="https://instagram.com/absolventskyvelehrad/">Instagramu</Anchor>
+                  {' '}
+#av19
+                </AVText>
+                <AVText>
+V případě zdravotních potíží kontaktuj naši zdravotnici Evu Výkrutovou (tel.
+                  <Anchor href="tel:+420602281238">602 281 238</Anchor>
+)
+                </AVText>
                 <AVText>Po celou dobu konání AV19 je možné využít Dětský koutek. Hlídání dětí tentokrát nebude zajištěno, můžete se domluvit mezi sebou :)</AVText>
                 <AVText>V neděli prosíme o vyklizení pokojů na Stojanově i VDCM do 13 hodin (do závěrečné mše). Věci si můžeš nechat v sále na Stojanově.</AVText>
               </Body>

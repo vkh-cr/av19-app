@@ -1,22 +1,22 @@
-import React from "react";
-import _ from "lodash";
+import React from 'react';
+import _ from 'lodash';
 
-import { Container, Content, Tab, Tabs } from "native-base";
+import {
+  Container, Content, Tab, Tabs
+} from 'native-base';
 
-import { CalendarDay } from "../components/CalendarDay";
-import { DrawerMenuButton } from "../components/DrawerMenuButton";
+import { CalendarDay } from '../components/CalendarDay';
+import { DrawerMenuButton } from '../components/DrawerMenuButton';
 
-import { activeDay } from "../utils/utils";
-import style from "../constants/Styles";
-import schelude from "../data/schelude";
+import { activeDay } from '../utils/utils';
+import style from '../constants/Styles';
+import schelude from '../data/schelude';
 
 export class HarmonogramScreen extends React.Component {
-  static navigationOptions = () => {
-    return {
-      title: "Harmonogram",
-      headerLeft: <DrawerMenuButton />,
-    };
-  };
+  static navigationOptions = () => ({
+    title: 'Harmonogram',
+    headerLeft: <DrawerMenuButton />,
+  });
 
   componentDidMount() {
     setTimeout(this._tabs.goToPage.bind(this._tabs, activeDay()));

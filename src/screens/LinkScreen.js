@@ -1,6 +1,8 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import {
+  StyleSheet, Text, View, Button
+} from 'react-native';
 
 class LinkScreen extends React.Component {
   render() {
@@ -13,7 +15,7 @@ class LinkScreen extends React.Component {
   }
 }
 
-export { LinkScreen }
+export { LinkScreen };
 
 const styles = StyleSheet.create({
   container: {

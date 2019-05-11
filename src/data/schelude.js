@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import _ from 'lodash';
 import activities from './activities';
 
 export default {
@@ -135,14 +135,14 @@ export default {
       location: 'Velehrad',
       icon: 'list-box',
       activities: _.filter(activities, ['block', 6])
-    },{
+    }, {
       name: 'Oběd',
       time: '11:40 - 12:40',
       location: 'Stojanov - jídelna'
-    },{
+    }, {
       name: 'Mše svatá, zakončení',
       time: '13:00 - 14:30',
       location: 'Bazilika'
     },
   ]
-}
+};

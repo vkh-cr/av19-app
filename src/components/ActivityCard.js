@@ -1,11 +1,19 @@
 import React from 'react';
-import { Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base';
+import {
+  Card, CardItem, Thumbnail, Text, Left, Body
+} from 'native-base';
 import Styles from '../constants/Styles';
-import { EventHeader, EventTime, EventSpeaker, EventPlace } from './text/AVText';
+import {
+  EventHeader, EventTime, EventSpeaker, EventPlace
+} from './text/AVText';
+
 export default class ActivityCard extends React.Component {
   render() {
     return (
-      <Card style={{ borderWidth: 0, borderLeftWidth: 10, borderColor: Styles.badge.backgroundColor[this.props.event.type], borderRadius: 5 }}>
+      <Card style={{
+        borderWidth: 0, borderLeftWidth: 10, borderColor: Styles.badge.backgroundColor[this.props.event.type], borderRadius: 5
+      }}
+      >
         <CardItem>
           <Body>
             <EventHeader>{this.props.event.name}</EventHeader>

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Separator, Text, Content, Card, CardItem, Body } from 'native-base';
+import {
+  Separator, Text, Content, Card, CardItem, Body
+} from 'native-base';
 import ActivityCard from '../ActivityCard';
 
 export default class FreeTimeTab extends React.Component {

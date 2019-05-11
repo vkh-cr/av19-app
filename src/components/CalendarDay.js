@@ -1,5 +1,5 @@
-import React from "react";
-import _ from "lodash";
+import React from 'react';
+import _ from 'lodash';
 import {
   List,
   ListItem,
@@ -8,24 +8,21 @@ import {
   Container,
   Left,
   Icon
-} from "native-base";
-import { View } from "react-native";
+} from 'native-base';
+import { View } from 'react-native';
 
-import style from "../constants/Styles";
-import { AVText } from "./text/AVText";
-import { AVBadge } from "./AVBadge";
+import style from '../constants/Styles';
+import { AVText } from './text/AVText';
+import { AVBadge } from './AVBadge';
+
 export class CalendarDay extends React.Component {
-  showEvents = activity => {
-    return _.map(activity.activities, event => {
-      return (
-          <AVBadge
-            event={event}
-            key={event.id}
-            navigation={this.props.navigation}
-          />
-      );
-    });
-  };
+  showEvents = activity => _.map(activity.activities, event => (
+    <AVBadge
+      event={event}
+      key={event.id}
+      navigation={this.props.navigation}
+    />
+  ));
 
   render() {
     return (

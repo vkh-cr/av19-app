@@ -6,13 +6,13 @@ import { StyleSheet } from 'react-native';
 import Color from '../constants/Colors';
 import speakers from '../data/speakers';
 
-
 export class Speakers extends React.Component {
   render() {
     return (
       <Container>
-        <List dataArray={speakers}
-          renderRow={(speaker) =>
+        <List
+          dataArray={speakers}
+          renderRow={speaker => (
             <ListItem avatar>
               <Left>
                 <Thumbnail source={speaker.image} />
@@ -28,8 +28,8 @@ export class Speakers extends React.Component {
                 </Button>
               </Right>
             </ListItem>
-          }>
-        </List>
+          )}
+        />
       </Container>
     );
   }
