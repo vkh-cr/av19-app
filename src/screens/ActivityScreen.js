@@ -1,9 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 import {
   Body,
   Thumbnail,
-  Container, Grid, Col, Row, CardItem, Content
+  Container, Grid, Col, Row, Content
 } from 'native-base';
 import _ from 'lodash';
 import {
@@ -22,28 +22,43 @@ export default class ActivityScreen extends React.Component {
   });
 
   // eslint-disable-next-line class-methods-use-this
-  showSpeakers(speakers) {
-    if (speakers instanceof Array) {
+  showSpeakers(speaker, navigation) {
+    if (speaker instanceof Array) {
+      const speakers = speaker;
       return (
         <View>
           {_.map(speakers, speaker => (
-            <View style={{ flexDirection: 'row', paddingTop: 10 }}>
+            <TouchableOpacity
+              style={{ flexDirection: 'row', paddingTop: 10 }}
+              onPress={() => navigation.navigate('Speaker', {
+                speaker,
+                title: speaker.name
+              })
+              }
+            >
               <Thumbnail source={speaker.image} style={{ margin: 5 }} />
               <Body style={{ justifyContent: 'center' }}>
                 <EventSpeaker>{speaker.name}</EventSpeaker>
               </Body>
-            </View>
+            </TouchableOpacity>
           ))}
         </View>
       );
     }
     return (
-      <View style={{ flexDirection: 'row', paddingTop: 10 }}>
-        <Thumbnail source={speakers.image} />
+      <TouchableOpacity
+        style={{ flexDirection: 'row', paddingTop: 10 }}
+        onPress={() => navigation.navigate('Speaker', {
+          speaker,
+          title: speaker.name
+        })
+        }
+      >
+        <Thumbnail source={speaker.image} />
         <Body style={{ justifyContent: 'center', }}>
-          <EventSpeaker style={{ color: Color.black, fontFamily: 'exo-bold' }}>{speakers.name}</EventSpeaker>
+          <EventSpeaker style={{ color: Color.black, fontFamily: 'exo-bold' }}>{speaker.name}</EventSpeaker>
         </Body>
-      </View>
+      </TouchableOpacity>
     );
   }
 
@@ -59,7 +74,7 @@ export default class ActivityScreen extends React.Component {
       <Container style={{ padding: 10, }}>
         <Content>
           <PageHeader>{event.name}</PageHeader>
-          {this.showSpeakers(event.speaker)}
+          {this.showSpeakers(event.speaker, navigation)}
           <Grid style={{
             maxHeight: 100, flex: 1, marginTop: 10, marginBottom: 10, backgroundColor: Color.steelGray_light,
           }}
