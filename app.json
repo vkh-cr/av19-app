@@ -14,11 +14,12 @@
     "splash": {
       "image": "./src/assets/splash.png",
       "resizeMode": "cover",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "#414151",
       "color": "#000000"
     },
+    "primaryColor": "#000000",
     "androidStatusBar": {
-      "backgroundColor": "#e8eeee"
+      "backgroundColor": "#414151"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -30,7 +31,7 @@
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 2,
+      "versionCode": 3,
       "package": "com.vojtechcerveny.av19",
       "permissions":[
       ]

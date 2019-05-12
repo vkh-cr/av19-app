@@ -1,4 +1,4 @@
-# Expo and React Navigation V3 - Boilerplate
+# AV19 application
 
 
 

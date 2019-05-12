@@ -21,27 +21,27 @@ const MenuContainer = ({ navigation }) => {
       </Header>
       <Content>
         <List>
-          <ListItem onPress={() => navigation.navigate('Home')} style={{ alignItems: 'center', flex: 1 }}>
+          <ListItem onPress={() => { navigation.closeDrawer(); navigation.navigate('Home'); }} style={{ alignItems: 'center', flex: 1 }}>
             <Icon name="home" style={iconStyle} />
             <AVText style={textStyle}>Domů</AVText>
           </ListItem>
-          <ListItem onPress={() => navigation.navigate('Harmonogram')}>
+          <ListItem onPress={() => { navigation.closeDrawer(); navigation.navigate('Harmonogram'); }}>
             <Icon name="list" style={iconStyle} />
             <AVText style={textStyle}>Harmonogram</AVText>
           </ListItem>
-          <ListItem onPress={() => navigation.navigate('Spirit')}>
+          <ListItem onPress={() => { navigation.closeDrawer(); navigation.navigate('Spirit'); }}>
             <Icon name="heart" style={iconStyle} />
             <AVText style={textStyle}>Duchovní program</AVText>
           </ListItem>
-          <ListItem onPress={() => navigation.navigate('Speakers')}>
+          <ListItem onPress={() => { navigation.closeDrawer(); navigation.navigate('Speakers'); }}>
             <Icon name="contacts" style={iconStyle} />
             <AVText style={textStyle}>Přednášející</AVText>
           </ListItem>
-          <ListItem onPress={() => navigation.navigate('Activities')}>
+          <ListItem onPress={() => { navigation.closeDrawer(); navigation.navigate('Activities'); }}>
             <Icon name="pulse" style={iconStyle} />
             <AVText style={textStyle}>Aktivity</AVText>
           </ListItem>
-          <ListItem onPress={() => navigation.navigate('Contact')}>
+          <ListItem onPress={() => { navigation.closeDrawer(); navigation.navigate('Contact'); }}>
             <Icon name="paper-plane" style={iconStyle} />
             <AVText style={textStyle}>Kontakt</AVText>
           </ListItem>

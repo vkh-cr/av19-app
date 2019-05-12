@@ -35,7 +35,6 @@ class HomeScreen extends React.Component {
                   flexWrap: 'wrap',
                 }}
                 >
-
                   <AVBadge
                     text="Přednášky"
                     eventType={1}
