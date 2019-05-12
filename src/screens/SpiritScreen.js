@@ -16,7 +16,6 @@ class SpiritScreen extends React.Component {
   static navigationOptions = () => ({
     title: 'Duchovní program',
     headerLeft: <DrawerMenuButton />,
-    headerTintColor: 'black'
   });
 
   render() {

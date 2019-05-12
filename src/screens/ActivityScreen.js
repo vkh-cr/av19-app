@@ -13,12 +13,7 @@ import Color from '../constants/Colors';
 
 export default class ActivityScreen extends React.Component {
   static navigationOptions = () => ({
-    title: 'Detail aktivity',
-    headerTintColor: '#000',
-    headerTitleStyle: {
-      fontWeight: 'bold',
-      fontFamily: 'exo',
-    }
+    title: 'Detail aktivity'
   });
 
   // eslint-disable-next-line class-methods-use-this

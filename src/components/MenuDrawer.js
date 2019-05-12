@@ -41,6 +41,11 @@ const MenuContainer = ({ navigation }) => {
             <Icon name="pulse" style={iconStyle} />
             <AVText style={textStyle}>Aktivity</AVText>
           </ListItem>
+          <ListItem onPress={() => navigation.navigate('Contact')}>
+            <Icon name="paper-plane" style={iconStyle} />
+            <AVText style={textStyle}>Kontakt</AVText>
+          </ListItem>
+
         </List>
       </Content>
     </Container>

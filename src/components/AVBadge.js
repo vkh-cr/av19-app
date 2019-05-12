@@ -12,6 +12,7 @@ const container = {
   borderColor: Colors.grassGreen,
   backgroundColor: Colors.grassGreen,
   maxWidth: '90%',
+  height: 32
 };
 const textStyle = {
   fontFamily: 'exo',

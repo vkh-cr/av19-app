@@ -44,6 +44,12 @@ export default [
     image: require('../assets/images/people/jan-regner.jpg')
   },
   {
+    id: 6,
+    name: 'Mary\'s meals',
+    description: 'Michael Schmidt se v profesním životě věnuje aktivizaci seniorů (pomocí loutek)  a mladistvým, kteří experimentují s návykovými látkami. Je také dobrovolníkem  v organizaci Mary’s Meals, se kterou se setkal během Expa na SV18.Celé dílo stojí    na myšlence, aby každé dítě dostalo jedno jídlo denně v místě svého vzdělává-  ní. Především vyzdvihuje zapojení se místní komunity do akce, podporu místní    ekonomiky a dobrovolnictví v dárcovských zemích. Díky těmto principům může  Mary’s Meals zajistit, aby se 93 % prostředků dostalo přímo k nejpotřebnějším.',
+    image: require('../assets/images/avatars/man4.png')
+  },
+  {
     id: 7,
     name: 'Pavel Šimon',
     description:
@@ -52,10 +58,10 @@ export default [
   },
   {
     id: 9,
-    name: 'Petr Beneš Praha',
+    name: 'Petr Beneš z Prahy',
     description:
       'Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.',
-    image: require('../assets/images/avatars/man4.png')
+    image: require('../assets/images/avatars/man3.png')
   },
   {
     id: 10,
@@ -106,14 +112,14 @@ export default [
     id: 17,
     name: 'Jakub Konček',
     description: 'Jakub Konček můžete považovat za sporťáka AVčka. Má ranní rozcvičky a netradiční sporty -> intercross a frisbee ultimate! Pokud si chcete zasportovat, tak určitě s Jakubem.',
-    image: require('../assets/images/avatars/man4.png')
+    image: require('../assets/images/avatars/man3.png')
   },
   {
     id: 18,
-    name: 'Petr Beneš Brno',
+    name: 'Petr Beneš z Brna',
     description:
       'Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.',
-    image: require('../assets/images/avatars/man1.png')
+    image: require('../assets/images/avatars/man2.png')
   },
   {
     id: 19,
@@ -193,7 +199,7 @@ export default [
     id: 30,
     name: 'Tomáš Novák',
     description: 'Ing. Tomáš Novák pracuje ve své soukromé praxi jako individuální či párový psychoterapeut, a v obchodních firmách externě jako kouč pro oblast rozvoje lidí, vedení jednání, řízení týmu či projektů a rozvoj obchodu. Než objevil kouzlo psychoterapie a absolvoval pětiletý výcvik v existenciální analýze/logoterapii, pracoval v nadnárodních IT, telekomunikačních a bankovních společnostech jako projektový manažer nebo obchodní kouč.',
-    image: require('../assets/images/avatars/man2.png')
+    image: require('../assets/images/people/tomas-novak.jpg')
   },
   {
     id: 31,
@@ -205,7 +211,7 @@ export default [
     id: 32,
     name: 'SM Bernadeta Bednaříková OSF',
     description: 'SM Bernadeta Bednaříková OSF je vysokoškolská františkánka, která do komunity přišla v roce 2008. Po noviciátě působila sedm let ve farní pastoraci v Brně  a v Liberci. Nyní je vychovatelkou v domově mládeže v Praze. Ráda se s tebou  podělí o své svědectví ve službě přímluvné modlitby, kterou si během AV společně s ní budeš moci vyzkoušet.',
-    image: require('../assets/images/avatars/woman1.png')
+    image: require('../assets/images/avatars/woman2.png')
   }
 
 ];

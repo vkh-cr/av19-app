@@ -329,7 +329,7 @@ export default [
   {
     id: 118,
     name: 'Hnutí Mary’s Meals - jednoduché řešení hladu ve světě   ',
-    speaker: `${speakerById(6)} & Mary's Meals`,
+    speaker: speakerById(6),
     time: getTime(1),
     description: 'Nikdo z nás si nevybral v jaké zemi a v jakých podmínkách se narodí. Můžeme v klidu žít a snažit se nevidět životy jiných lidí? Opravdu neexistuje možnost, jak efektivně řešit problémy světa? Pojďme se zamyslet nad tím, jak by se dal vyřešit jeden z největších problémů – hlad.',
     image: require('../assets/images/activities/activity1.png'),
@@ -388,7 +388,7 @@ export default [
     image: require('../assets/images/activities/activity2.png'),
     day: 1,
     block: 2,
-    type: 0,
+    type: 2,
     place: placeById(11),
     capacity: 15
   },

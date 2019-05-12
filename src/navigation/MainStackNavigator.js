@@ -7,6 +7,7 @@ import ActivityScreen from '../screens/ActivityScreen';
 import HarmonogramScreen from '../screens/HarmonogramScreen';
 import SpeakerScreen from '../screens/SpeakerScreen';
 import SpiritScreen from '../screens/SpiritScreen';
+import ContactScreen from '../screens/ContactScreen';
 
 const MainStackNavigator = createStackNavigator(
   {
@@ -17,6 +18,7 @@ const MainStackNavigator = createStackNavigator(
     Harmonogram: HarmonogramScreen,
     Speaker: SpeakerScreen,
     Spirit: SpiritScreen,
+    Contact: ContactScreen,
   },
   {
     defaultNavigationOptions: {

@@ -65,18 +65,18 @@ class HomeScreen extends React.Component {
                 <AVText padding>- budou zde aktuální informace o zpovědích, duchovních rozhovorech a o setkání s psychoterapeutem a koučem</AVText>
                 <AVText padding>- zde ti také odpoví na veškeré dotazy (nebo zjistí odpověď).</AVText>
                 <AVText>
-Sleduj aktuální informace na
+                  Sleduj aktuální informace na
                   <Anchor href="https://www.facebook.com/absolventskyvelehrad/">Facebooku</Anchor>
                   {' '}
-a
+                  a
                   <Anchor href="https://instagram.com/absolventskyvelehrad/">Instagramu</Anchor>
                   {' '}
-#av19
+                  #av19
                 </AVText>
                 <AVText>
-V případě zdravotních potíží kontaktuj naši zdravotnici Evu Výkrutovou (tel.
+                  V případě zdravotních potíží kontaktuj naši zdravotnici Evu Výkrutovou (tel.
                   <Anchor href="tel:+420602281238">602 281 238</Anchor>
-)
+                  )
                 </AVText>
                 <AVText>Po celou dobu konání AV19 je možné využít Dětský koutek. Hlídání dětí tentokrát nebude zajištěno, můžete se domluvit mezi sebou :)</AVText>
                 <AVText>V neděli prosíme o vyklizení pokojů na Stojanově i VDCM do 13 hodin (do závěrečné mše). Věci si můžeš nechat v sále na Stojanově.</AVText>

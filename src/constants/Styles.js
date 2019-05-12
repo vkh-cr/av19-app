@@ -10,8 +10,10 @@ export default {
   },
   badgeView: {
     style: {
+      flex: 1,
       flexWrap: 'wrap',
       flexDirection: 'row',
+      width: '95%'
     }
   },
   badge: {
