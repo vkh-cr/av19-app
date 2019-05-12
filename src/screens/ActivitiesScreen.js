@@ -3,7 +3,7 @@ import _ from 'lodash';
 import {
   Container, Tab, Tabs
 } from 'native-base';
-
+import DrawerMenuButton from '../components/DrawerMenuButton';
 import ActivityTab from '../components/ActivityTab';
 
 import activities from '../data/activities';
@@ -11,7 +11,8 @@ import style from '../constants/Styles';
 
 export default class ActivitiesScreen extends React.Component {
   static navigationOptions = {
-    title: 'Aktivity'
+    title: 'Aktivity',
+    headerLeft: <DrawerMenuButton />,
   };
 
   render() {

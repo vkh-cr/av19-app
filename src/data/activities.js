@@ -84,7 +84,7 @@ export default [
     day: 1,
     block: 4,
     type: 2,
-    place: placeById(1),
+    place: placeById(3),
     capacity: 999,
   },
   {
@@ -306,7 +306,7 @@ export default [
   },
   {
     id: 118,
-    name: 'Hnutí Mary’s Meals - jednoduché řešení hladu ve světě   ',
+    name: 'Hnutí Mary’s Meals - jednoduché řešení hladu ve světě',
     speaker: speakerById(6),
     time: getTime(1),
     description: 'Nikdo z nás si nevybral v jaké zemi a v jakých podmínkách se narodí. Můžeme v klidu žít a snažit se nevidět životy jiných lidí? Opravdu neexistuje možnost, jak efektivně řešit problémy světa? Pojďme se zamyslet nad tím, jak by se dal vyřešit jeden z největších problémů – hlad.',

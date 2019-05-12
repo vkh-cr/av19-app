@@ -24,7 +24,7 @@ class HomeScreen extends React.Component {
     return (
       <Container>
 
-        <Content style={{ padding: 10 }}>
+        <Content style={{ padding: 10, paddingBottom: 30 }}>
           <Card>
             <CardItem>
               <Body>
@@ -64,13 +64,7 @@ class HomeScreen extends React.Component {
                 <AVText padding>- budou zde aktuální informace o zpovědích, duchovních rozhovorech a o setkání s psychoterapeutem a koučem</AVText>
                 <AVText padding>- zde ti také odpoví na veškeré dotazy (nebo zjistí odpověď).</AVText>
                 <AVText>
-                  Sleduj aktuální informace na
-                  <Anchor href="https://www.facebook.com/absolventskyvelehrad/">Facebooku</Anchor>
-                  {' '}
-                  a
-                  <Anchor href="https://instagram.com/absolventskyvelehrad/">Instagramu</Anchor>
-                  {' '}
-                  #av19
+                  Sleduj aktuální informace na <Anchor href="https://www.facebook.com/absolventskyvelehrad/">Facebooku</Anchor> a <Anchor href="https://instagram.com/absolventskyvelehrad/">Instagramu</Anchor>  #av19
                 </AVText>
                 <AVText>
                   V případě zdravotních potíží kontaktuj naši zdravotnici Evu Výkrutovou (tel.
@@ -100,27 +94,7 @@ class HomeScreen extends React.Component {
               </Body>
             </CardItem>
           </Card>
-
-          <Card>
-            <CardItem>
-              <Body>
-                <AVHeader>Aktuální aktivita</AVHeader>
-                <AVText>
-                  - Na přednášky a workshopy se zapisuj do archů vyvěšených na
-                  recepci Stojanov.
-                </AVText>
-                <AVText>
-                  - S veškerými dotazy se může obrátit na pořadatele na recepci
-                  Stojanov.
-                </AVText>
-                <AVText>Sleduj informace na Facebooku a Instagramu #av19</AVText>
-                <AVText>
-                  - V případě zdravotních potíží kontaktujte naší zdravotnici Evu
-                  (602 281 238)
-                </AVText>
-              </Body>
-            </CardItem>
-          </Card>
+          <View style={{ padding: 10 }} />
         </Content>
       </Container>
     );

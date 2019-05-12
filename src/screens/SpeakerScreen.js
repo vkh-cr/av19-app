@@ -16,7 +16,7 @@ export default class SpeakerScreen extends React.Component {
     title: navigation.getParam('title', 'A Nested Details Screen'),
   });
 
-  showEvents = speaker => _.map(_.filter(activities, activity => activity.speaker === speaker), event => (
+  showEvents = speaker => _.map(_.filter(activities, activity => activity.speaker === speaker || _.includes(activity.speaker, speaker)), event => (
     <AVBadge
       event={event}
       key={event.id}

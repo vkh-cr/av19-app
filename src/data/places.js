@@ -6,7 +6,7 @@ export default [
   { id: 5, place: 'Stojanov sál' },
   { id: 6, place: 'bazilika' },
   { id: 7, place: 'Zimní sál' },
-  { id: 8, place: 'sklep Gymnázium' },
+  { id: 8, place: 'Gymnázium sklep' },
   { id: 9, place: 'třída 1' },
   { id: 10, place: 'třída 2' },
   { id: 11, place: 'třída 3' },

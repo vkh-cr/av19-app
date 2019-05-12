@@ -3,9 +3,9 @@
 export default [
   {
     id: 0,
-    name: 'tým AV19',
+    name: 'Tým AV19',
     description:
-      'Nejlepší tým :)',
+      'Tak tohle místo jsi našel/našla dobře! :) Zlatý bludišťák pro Tebe!',
     image: require('../assets/images/people/av-tym.png')
   },
   {
@@ -46,7 +46,7 @@ export default [
   {
     id: 6,
     name: 'Mary\'s meals',
-    description: 'Michael Schmidt se v profesním životě věnuje aktivizaci seniorů (pomocí loutek)  a mladistvým, kteří experimentují s návykovými látkami. Je také dobrovolníkem  v organizaci Mary’s Meals, se kterou se setkal během Expa na SV18.Celé dílo stojí    na myšlence, aby každé dítě dostalo jedno jídlo denně v místě svého vzdělává-  ní. Především vyzdvihuje zapojení se místní komunity do akce, podporu místní    ekonomiky a dobrovolnictví v dárcovských zemích. Díky těmto principům může  Mary’s Meals zajistit, aby se 93 % prostředků dostalo přímo k nejpotřebnějším.',
+    description: 'Michael Schmidt se v profesním životě věnuje aktivizaci seniorů (pomocí loutek) a mladistvým, kteří experimentují s návykovými látkami. Je také dobrovolníkem  v organizaci Mary’s Meals, se kterou se setkal během Expa na SV18. Celé dílo stojí na myšlence, aby každé dítě dostalo jedno jídlo denně v místě svého vzdělávání. Především vyzdvihuje zapojení se místní komunity do akce, podporu místní ekonomiky a dobrovolnictví v dárcovských zemích. Díky těmto principům může Mary’s Meals zajistit, aby se 93% prostředků dostalo přímo k nejpotřebnějším.',
     image: require('../assets/images/avatars/man4.png')
   },
   {
@@ -111,14 +111,14 @@ export default [
   {
     id: 17,
     name: 'Jakub Konček',
-    description: 'Jakub Konček můžete považovat za sporťáka AVčka. Má ranní rozcvičky a netradiční sporty -> intercross a frisbee ultimate! Pokud si chcete zasportovat, tak určitě s Jakubem.',
+    description: 'Jakuba Končeka můžete považovat za sporťáka AVčka. Má ranní rozcvičky a netradiční sporty -> intercross a frisbee ultimate! Pokud si chcete zasportovat, tak určitě s Jakubem.',
     image: require('../assets/images/avatars/man3.png')
   },
   {
     id: 18,
-    name: 'Petr Beneš z Brna',
+    name: 'Petr Miloslav Jan Křtitel Beneš',
     description:
-      'Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.',
+      'Petr Miloslav Jan Křtitel Beneš je od roku 2001 šťastný kněz brněnské diecéze, od roku 2003 ve farnosti Brno-Židenice. Od září 2002 do srpna 2018 byl spirituálem na CMGaSOŠPg v Brně. Během studia na CMTF UP Olomouc měl možnost prožít dva roky ve škole života a evangelizace Jeunesse-Lumière. Je členem týmu Dětské katolické konference v Brně a charismatického setkání New Dawn v ČR. Díky očním vadám je nositelem přezdívky Kuliočka.',
     image: require('../assets/images/avatars/man2.png')
   },
   {
@@ -185,7 +185,7 @@ export default [
   },
   {
     id: 28,
-    name: 'E. Šimecká',
+    name: 'Eliška Šimecká',
     description: 'Povede modlitbu tancem. Ze společenství žen z Brna - Biskupské. Chceš-li vědět víc, Dojdi na její workshop.',
     image: require('../assets/images/avatars/woman3.png')
   },

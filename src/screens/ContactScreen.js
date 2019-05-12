@@ -28,13 +28,14 @@ class ContactScreen extends React.Component {
               <CardItem>
                 <Body>
                   <AVHeader>Kontakt</AVHeader>
-                  <AVText>Makáme na tom!</AVText>
+                  <AVText>Vše by mělo být na recepci na Stojanově.</AVText>
                 </Body>
               </CardItem>
             </Card>
             <Card>
               <CardItem>
                 <Body>
+                  <AVText>A vzkaz pro Tebe:</AVText>
                   <Image
                     source={require('../assets/images/cat.gif')}
                     style={{ width: '100%' }}

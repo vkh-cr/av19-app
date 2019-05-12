@@ -102,7 +102,7 @@ class Anchor extends React.Component {
   };
 
   render() {
-    const { children } = this;
+    const { children } = this.props;
     return (
       // eslint-disable-next-line no-underscore-dangle
       <Text {...this.props} style={{ color: Colors.orange, fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={this._handlePress}>
