@@ -86,8 +86,9 @@ class AVHeader extends React.Component {
 
 class AVHeader2 extends React.Component {
   render() {
+    const { style } = this.props;
     const cssStyle = {
-      paddingTop: 15, fontFamily: 'exo-bold', fontSize: 22, color: Colors.spaceNavy
+      paddingTop: 15, fontFamily: 'exo-bold', fontSize: 22, color: Colors.spaceNavy, ...style
     };
     return <Text {...this.props} style={cssStyle} />;
   }
