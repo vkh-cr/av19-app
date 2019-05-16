@@ -17,8 +17,8 @@ export default {
     }
   },
   badge: {
-    backgroundColor: [Color.grassGreen, Color.goldenBay, Color.pictionBlue, Color.grassGreen],
-    color: [Color.black, Color.black, Color.white, Color.white],
+    backgroundColor: [Color.av_grey, Color.av_yellow, Color.av_orange, Color.av_grey],
+    color: [Color.black, Color.black, Color.white, Color.black],
   },
   tab: {
     tabStyle: {

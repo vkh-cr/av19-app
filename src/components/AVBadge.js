@@ -9,8 +9,8 @@ const container = {
   paddingVertical: 6,
   borderRadius: 50,
   borderWidth: 1,
-  borderColor: Colors.grassGreen,
-  backgroundColor: Colors.grassGreen,
+  borderColor: Colors.av_grey,
+  backgroundColor: Colors.av_grey,
   maxWidth: '90%',
   height: 32
 };

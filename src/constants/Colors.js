@@ -18,11 +18,11 @@ export default {
   slatePurple_light: '#F1EBFD',
   hanBlue: '#2F61D5',
   hanBlue_light: '#EAEEFA',
-  pictionBlue: '#3FB6DC',
+  av_orange: '#ff6666',
   pictionBlue_light: '#EBF7FB',
-  grassGreen: '#2DC76D',
+  av_grey: '#e4e4e4',
   grassGreen_light: '#E9F8F0',
-  warmOrange: '#FF7052',
-  goldenBay: '#FFC800',
-  goldenBay_light: '#FFF8E5'
+  warmOrange: '#f1583a',
+  av_yellow: '#FFC800',
+  av_yellow_light: '#FFF8E5'
 };
