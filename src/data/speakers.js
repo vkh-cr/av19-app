@@ -23,13 +23,6 @@ export default [
     image: require('../assets/images/people/pavel-belobradek.jpg')
   },
   {
-    id: 3,
-    name: 'Jiří Padevět',
-    description:
-      'Známý spisovatel, ředitel nakladatelství Academia, držitel Magnesie litery za Průvodce protektorátní Prahou, autor televizního pořadu Krvavá léta (o místech spojených s nacistickou a komunistickou tyranií). Ve svých populárních textech se často zabývá aktuálním děním i totalitními režimy. ',
-    image: require('../assets/images/people/jiri-padevet.jpg')
-  },
-  {
     id: 4,
     name: 'František Lízna',
     description:
@@ -47,28 +40,21 @@ export default [
     id: 6,
     name: 'Mary\'s meals',
     description: 'Michael Schmidt se v profesním životě věnuje aktivizaci seniorů (pomocí loutek) a mladistvým, kteří experimentují s návykovými látkami. Je také dobrovolníkem  v organizaci Mary’s Meals, se kterou se setkal během Expa na SV18. Celé dílo stojí na myšlence, aby každé dítě dostalo jedno jídlo denně v místě svého vzdělávání. Především vyzdvihuje zapojení se místní komunity do akce, podporu místní ekonomiky a dobrovolnictví v dárcovských zemích. Díky těmto principům může Mary’s Meals zajistit, aby se 93% prostředků dostalo přímo k nejpotřebnějším.',
-    image: require('../assets/images/avatars/man4.png')
+    image: require('../assets/images/people/michael-schmidt.jpg')
   },
   {
     id: 7,
     name: 'Pavel Šimon',
     description:
       'Mgr. Bc. Pavel Šimon je vedoucím služby pro rodiny v obtížné životní situaci a vedoucí Centra náhradní rodinné péče. Profesí sociální pracovník, pedagog, krizový intervent a rodinný terapeut ve výcviku. Někdejší “týmák” na Vesmíru a organizátor mládeže, otec 4 dětí, kterému rodinná politika není lhostejná. Nesnáší brokolici a špatné víno.',
-    image: require('../assets/images/avatars/man3.png')
-  },
-  {
-    id: 9,
-    name: 'Petr Beneš z Prahy',
-    description:
-      'Od českého jazyka, literatury, pedagogiky a filozofie se Petr Beneš CSsR dostal ke křesťanství a po letech pedagogického působení i k redemptoristům. Působil mezi vídeňskými Čechy, napsal libreta dvou oratorií, aktuálně působí u Nejsvětějšího Srdce Páně na Vinohradech a vede exercicie. Ovlivněn byl mj. Janem Nepomukem Neumannem, který založil v USA téměř 100 škol.',
-    image: require('../assets/images/avatars/man3.png')
+    image: require('../assets/images/people/pavel-simon.jpg')
   },
   {
     id: 10,
     name: 'Manželé Peter a Gabriela Štupákovi',
     description:
       'Peter je leader katolického společenství Marana Tha v Prešově. Společně s manželkou Gabrielou vychovávají čtyři děti. Působí v pořadu Na cestě v rodině TV LUX (Slovensko).',
-    image: require('../assets/images/people/peter-stupak.jpg')
+    image: require('../assets/images/people/stupakovi.jpeg')
   },
   {
     id: 11,
@@ -88,7 +74,7 @@ export default [
     id: 13,
     name: 'Manželé Míla a Pavel Bajerovi',
     description: 'Míla a Pavel Bajerovi jsou organizátoři a lektoři vztahových a jiných kursů Manželské večery, Manželství na dobré cestě, Příprava na manželství, Hranice (nejen) v partnerských vztazích či Peníze a já v Brně u jezuitů. Míla vystudovala teologické nauky na CMTF. Momentálně koordinuje vzdělávací aktivity v Institutu Bernarda Bolzana. Pavel získal doktorát v sociální práci na MU v Brně. V minulosti učil na FSS MU a vedl časopis Sociální práce/Sociálna práca. V současnosti pracuje jako osobní vztahový kouč v seznamovací agentuře Date2k. Míla a Pavel jsou svoji už 11 let a ve volném čase chodí po kopcích a cestují.',
-    image: require('../assets/images/avatars/man1.png')
+    image: require('../assets/images/people/bajerovi.jpg')
   },
   {
     id: 14,
@@ -119,7 +105,7 @@ export default [
     name: 'Petr Miloslav Jan Křtitel Beneš',
     description:
       'Petr Miloslav Jan Křtitel Beneš je od roku 2001 šťastný kněz brněnské diecéze, od roku 2003 ve farnosti Brno-Židenice. Od září 2002 do srpna 2018 byl spirituálem na CMGaSOŠPg v Brně. Během studia na CMTF UP Olomouc měl možnost prožít dva roky ve škole života a evangelizace Jeunesse-Lumière. Je členem týmu Dětské katolické konference v Brně a charismatického setkání New Dawn v ČR. Díky očním vadám je nositelem přezdívky Kuliočka.',
-    image: require('../assets/images/avatars/man2.png')
+    image: require('../assets/images/people/pavel-krtitel-benes.jpg')
   },
   {
     id: 19,
@@ -158,16 +144,16 @@ export default [
   },
   {
     id: 24,
-    name: 'Eva Čepelková',
+    name: 'Pavlína Čiháčková',
     description:
-      'Eva Čepelková je manželka a matka, lektorka angličtiny a překladatelka. Aby se na mateřské nezbláznila, prochází výcvikem Mediace pro život. Má ráda nenásilnou komunikaci a chtěla by se podělit o to, co pro ni znamená.',
+      'Zajímá se o nenásilnou komunikaci, absolvovala různé kurzy zaměřené na tuto problematiku pod vedením zkušených lektorů. Je velmi milá a ochotná. Je natolik odvážná, že na poslední chvíli zaskočí za Evu Čepelkovou, která workshop nemůže vést kvůli mateřským povinnostem.',
     image: require('../assets/images/avatars/woman2.png')
   },
   {
     id: 25,
     name: 'Leona Ondrušková',
     description:
-      'Leona Ondrušková  je vizážistka / maskérka, fotografka a nadšená cestovatelka. Má za sebou make-up spolupráci s Českou Miss, předními zlínskými firmami a vlastní vizážistické studio. Zaměřuje se na tvorbu celkové svatební vizáže, reklamní makeup, ale i osobní klientelu, kterou učí nalézt pomocí kurzů líčení většímu sebevědomí. Podílí se také na kreativním tvoření masek pro fashion designéry a filmová natáčení. Vyznává individuální přístup ke každému a miluje přirozený makeup.',
+      'Leona Ondrušková je vizážistka / maskérka, fotografka a nadšená cestovatelka. Má za sebou make-up spolupráci s Českou Miss, předními zlínskými firmami a vlastní vizážistické studio. Zaměřuje se na tvorbu celkové svatební vizáže, reklamní makeup, ale i osobní klientelu, kterou učí nalézt pomocí kurzů líčení většímu sebevědomí. Podílí se také na kreativním tvoření masek pro fashion designéry a filmová natáčení. Vyznává individuální přístup ke každému a miluje přirozený makeup.',
     image: require('../assets/images/avatars/woman1.png')
   },
   {

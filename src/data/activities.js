@@ -112,18 +112,6 @@ export default [
     capacity: 30
   },
   {
-    id: 102,
-    name: 'Svoboda v Kristu',
-    speaker: speakerById(9),
-    time: getTime(1),
-    description: 'Svoboda je základním darem, který jsme od Krista dostali. Vychází z velikonoční události a má výrazně křestní charakter. Přijímá se vírou, živí nadějí a osvědčuje láskou. Tu svobodu  nám vydobyl Kristus (Gal 5,1). Svobodný život v Kristu předpokládá odvahu převzít zodpovědnost za naše povolání. Svoboda je vždy spojena s ohledem na prospěch bližního. K tomu je potřeba žít zásadní vztah – vztah k Bohu. Svobodné křesťanství je statečné, kreativní, angažované. I zdravě kritické. Předpokladem pravdivé a láskyplné kritické angažovanosti křesťana je pokora – před Bohem i lidmi.',
-    day: 1,
-    block: 1,
-    type: 1,
-    place: placeById(5),
-    capacity: 40
-  },
-  {
     id: 103,
     name: 'Rodina je v krizi. Ale co s tím?',
     speaker: speakerById(7),
@@ -174,7 +162,7 @@ export default [
   {
     id: 107,
     name: 'Být člověkem a společností s hodnotami po dvou totalitách?',
-    speaker: [speakerById(2), speakerById(3)],
+    speaker: speakerById(2),
     time: getTime(2),
     description: 'Známe je z televize, textů i sociálních sítí - dnes se jich však můžeme ptát přímo, a to na jejich bohaté životní zkušenosti, tak na fungování jednotlivce v současném světě. Beseda zaměřená na zapojení člověka ve společnosti, na současné tendence a tlaky a jejich kořeny, nevyléčené rány z problematické minulosti státu, na odpovědnost člověka “viditelného” a aktivního na formování společnosti a jejího veřejného mínění, přinese i postřehy z bádání Jiřího Padevěta o životě na našem území během nacismu a komunismu či diskuzi nad tím, co jsou křesťanské hodnoty, o kterých se tolik mluví.',
     day: 1,
@@ -363,7 +351,7 @@ export default [
     block: 2,
     type: 2,
     place: placeById(11),
-    capacity: 15
+    capacity: 24
   },
   {
     id: 203,
@@ -382,7 +370,7 @@ export default [
     name: 'Nenásilná komunikace',
     speaker: speakerById(24),
     time: getTime(3),
-    description: 'Eva Čepelková je manželka a matka, lektorka angličtiny a překladatelka. Aby se na mateřské nezbláznila, prochází výcvikem Mediace pro život. Má ráda nenásilnou komunikaci a chtěla by se podělit o to, co pro ni znamená.',
+    description: 'Nenásilná komunikace vychází z myšlenky, že lidé jsou schopni soucítění. Pokud neznají jiné prostředky, jak si naplnit své potřeby, uchylují se v komunikaci k násilnému sebeprosazení. Často se setkáváme s komunikací založenou na kladení požadavků, soutěživosti, posuzování, co je „dobré“ a „špatné“, což může vést k nedorozuměním. V metodě nenásilné komunikace (Marshalla Rosenberga) člověk identifikuje své potřeby, potřeby a pocity druhých a představuje způsoby, jak překonat staré vzorce a učit se s úctou, nenásilně vyjádřit své potřeby. Workshop je otevřený lidem, kteří na sobě chtějí pracovat, přemýšlí, jak rozvíjet vztahy, jednat s lidmi a řešit konflikty.',
     day: 1,
     block: 3,
     type: 2,
@@ -474,7 +462,7 @@ export default [
     block: 4,
     type: 2,
     place: placeById(7),
-    capacity: '???'
+    capacity: '20'
   },
   {
     id: 212,
@@ -559,6 +547,18 @@ export default [
     block: 4,
     type: 3,
     place: placeById(3),
+    capacity: 999
+  },
+  {
+    id: 303,
+    name: 'Zpovědi, duch. rozhovory & zejtej se psychoterapeuta a kouče',
+    speaker: speakerById(0),
+    time: getTime(7),
+    description: 'Možnost se pobavit o svém životě s duchovním či psychoterapeutem. Všechny bys měl/a poznat podle symbolu naslouchajícího ucha. Více informací najdeš na recepci Stojanov.',
+    day: 1,
+    block: 7,
+    type: 3,
+    place: 'Info na recepci',
     capacity: 999
   },
 ];

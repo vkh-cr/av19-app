@@ -92,7 +92,7 @@ export default {
     }, {
       name: 'Zkouška na Zpěvy Taizé',
       time: '19:00 - 20:00',
-      location: 'Zasedačka 2.patro',
+      location: 'Stojanov - zasedačka 3.patro',
     }, {
       name: 'Setkání regionů',
       time: '19:30 - 20:00',
@@ -136,7 +136,11 @@ export default {
       icon: 'list-box',
       activities: _.filter(activities, ['block', 6])
     }, {
-      name: 'Oběd',
+      name: 'Anděl Páně',
+      time: '11:20 - 11:40',
+      location: 'U kříže'
+    }, {
+      name: 'Oběd & vyklízení pokojů',
       time: '11:40 - 12:40',
       location: 'Stojanov - jídelna'
     }, {
